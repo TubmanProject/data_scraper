@@ -1,0 +1,8 @@
+Flask
+Flask-SQLAlchemy
+SQLAlchemy
+requests
+beautifulsoup4
+Werkzeug
+Flask-Mail
+Flask_Uploads
