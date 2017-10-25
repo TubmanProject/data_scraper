@@ -163,9 +163,9 @@ class Dispositions(BaseDB):
         try:
             response = requests.get('http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx')
             response.raise_for_status()
-        except requests.exceptions.HTTPError as err:
+        except requests.exceptions.HTTPError:
             raise
-        except requests.exceptions.RequestException as err:
+        except requests.exceptions.RequestException:
             raise  
         
         # create a BeautifulSoup object with the content of the response
@@ -192,9 +192,9 @@ class Dispositions(BaseDB):
         try:
             r = requests.post('http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx', data=form_data)
             r.raise_for_status()
-        except requests.exceptions.HTTPError as err:
+        except requests.exceptions.HTTPError:
             raise
-        except requests.exceptions.RequestException as err:
+        except requests.exceptions.RequestException:
             raise
         
         filename = '%s_criminal_disposition.txt'%(date)
@@ -203,7 +203,7 @@ class Dispositions(BaseDB):
         if not os.path.exists(os.path.dirname(os.path.join(HCDC_CRIMINAL_DISPOSITION_PATH, filename))):
             try:
                 os.makedirs(os.path.dirname(os.path.join(HCDC_CRIMINAL_DISPOSITION_PATH, filename)))
-            except Exception as err: 
+            except OSError: 
                raise
         
         # save the requested file to disk        
