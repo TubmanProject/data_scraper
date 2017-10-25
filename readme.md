@@ -67,8 +67,9 @@ TBD
 Edit the file at https://github.com/tyronemsaunders/hcdc_criminal_scraper/blob/master/app/config.py and add configuration details.
 
 ### Usage
-Remember to work inside of the virtualenv shell
-For development environments on Mac OSX or Linux set the FLASK_APP environment variable
+Remember to work inside of the virtualenv shell.
+
+For development environments on Mac OSX or Linux set the FLASK_APP environment variable.
 ```
 $ export FLASK_APP=/path/to/project/run.py
 ```
@@ -84,6 +85,7 @@ $ flask run
 ```
 
 The application should now be running on at localhost:5000.
+
 Call the API endpoints described above i.e. `curl -X POST http://127.0.0.1:5000/api/scraper/disposition/today`
 
 ## Contribute
