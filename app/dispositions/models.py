@@ -14,10 +14,10 @@ class Dispositions(BaseDB):
     __tablename__ = 'dispositions'
     
     # table columns
-    rundate                                 = db.Column(db.DateTime, nullable=False)
+    rundate                                 = db.Column(db.VARCHAR(255), nullable=False)
     court_division_indicator_code           = db.Column(db.Integer, db.ForeignKey('court_division_indicator.code'), nullable=False)
     case_number                             = db.Column(db.Integer, nullable=False)
-    filing_date                             = db.Column(db.DateTime, nullable=True)
+    filing_date                             = db.Column(db.VARCHAR(255), nullable=True)
     instrument_type_code                    = db.Column(db.VARCHAR(3), db.ForeignKey('instrument_type.code'), nullable=False)
     case_disposition_code                   = db.Column(db.VARCHAR(4), db.ForeignKey('case_disposition.code'), nullable=False)
     court                                   = db.Column(db.Integer, nullable=False)
@@ -27,14 +27,14 @@ class Dispositions(BaseDB):
     current_offense_code                    = db.Column(db.Integer, nullable=False)
     current_offense_definition              = db.Column(db.VARCHAR(255), nullable=True)
     current_offense_level_degree_code       = db.Column(db.VARCHAR(2), db.ForeignKey('current_offense_level_degree.code'), nullable=False)
-    next_appearance_date                    = db.Column(db.DateTime, nullable=True)
+    next_appearance_date                    = db.Column(db.VARCHAR(255), nullable=True)
     docket_calendar_name_code               = db.Column(db.VARCHAR(3), db.ForeignKey('docket_calendar_name.code'), nullable=True)
     calendar_reason_code                    = db.Column(db.VARCHAR(4), db.ForeignKey('calendar_reason.code'), nullable=True)
     defendant_name                          = db.Column(db.VARCHAR(255), nullable=True)
     defendant_spn                           = db.Column(db.Integer, nullable=False)
     defendant_race_code                     = db.Column(db.VARCHAR(1), db.ForeignKey('defendant_race.code'), nullable=True)
     defendant_sex                           = db.Column(db.VARCHAR(1), nullable=True)
-    defendant_date_of_birth                 = db.Column(db.DateTime, nullable=True)
+    defendant_date_of_birth                 = db.Column(db.VARCHAR(255), nullable=True)
     defendant_street_number                 = db.Column(db.VARCHAR(10), nullable=True)
     defendant_street_name                   = db.Column(db.VARCHAR(255), nullable=True)
     defendant_city                          = db.Column(db.VARCHAR(255), nullable=True)
@@ -44,7 +44,7 @@ class Dispositions(BaseDB):
     attorney_spn                            = db.Column(db.Integer, nullable=True)
     attorney_connection_code                = db.Column(db.VARCHAR(3), nullable=True)
     attorney_connection_definition          = db.Column(db.VARCHAR(255), nullable=True)
-    disposition_date                        = db.Column(db.DateTime, nullable=True)
+    disposition_date                        = db.Column(db.VARCHAR(255), nullable=True)
     disposition                             = db.Column(db.VARCHAR(255), nullable=True)
     sentence                                = db.Column(db.VARCHAR(255), nullable=True)
     complainant_name                        = db.Column(db.VARCHAR(255), nullable=True)
@@ -140,7 +140,7 @@ class Dispositions(BaseDB):
             for j, header_attr in enumerate(header):
                 
                 # setattr api: setattr(object, name, value)
-                setattr(disposition, disposition_attributes[header_attr], disposition_row[j])
+                setattr(disposition, disposition_attributes[header_attr.rstrip()], disposition_row[j].rstrip())
         
             # add the disposition to the database session
             db.session.add(disposition)

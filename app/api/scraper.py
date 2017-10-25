@@ -36,7 +36,7 @@ def scrape_disposition_today():
     try: 
        parsed = Dispositions.parse_disposition_data_by_date(today)
     except Exception as err:
-       return Response.make_error_resp(msg=str(err), type=err.__class__.__name__, code=500) 
+        return Response.make_error_resp(msg=str(err), type=err.__class__.__name__, code=500) 
     
     if parsed:
         return Response.make_success_resp(msg="Disposition report for today has been saved to the database.")
