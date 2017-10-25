@@ -1,3 +1,5 @@
+import os
+
 class DefaultConfig(object):
     #################################
     # Built-in configuration values #

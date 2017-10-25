@@ -1,5 +1,5 @@
 from ..extensions import BaseDB, db
-from ..config import HCDC_CRIMINAL_DISPOSITION_PATH, HCDC_CRIMINAL_FILING_PATH, HCDC_DATA_PATH
+from ..constants import HCDC_CRIMINAL_DISPOSITION_PATH, HCDC_CRIMINAL_FILING_PATH, HCDC_DATA_PATH
 
 import os
 import datetime

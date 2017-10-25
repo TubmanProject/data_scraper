@@ -6,7 +6,7 @@ import requests
 import bs4
 
 from ..response import Response
-from ..config import HCDC_CRIMINAL_DISPOSITION_PATH, HCDC_CRIMINAL_FILING_PATH, HCDC_DATA_PATH
+from ..constants import HCDC_CRIMINAL_DISPOSITION_PATH, HCDC_CRIMINAL_FILING_PATH, HCDC_DATA_PATH
 from ..dispositions import Dispositions
 
 scraper = Blueprint('scraper', __name__, url_prefix='/api/scraper')
