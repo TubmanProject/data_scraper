@@ -128,7 +128,7 @@ class Dispositions(BaseDB):
             raise
         
         # loop through each row of the disposition data
-        for i, disposition_row in enumerate(disposition_data, start=1):
+        for i, disposition_row in enumerate(disposition_data[1:]):
             
             # header is the first line of the array
             header = disposition_data[0]
