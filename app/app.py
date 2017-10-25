@@ -88,6 +88,7 @@ def configure_extensions(app):
     # add a custom CLI command for initializing the database
     with app.app_context():
         def init_db():
+            db.drop_all()
             db.create_all()
             CourtDivisionIndicator.seed_db(HCDC_DATA_PATH)
             InstrumentType.seed_db(HCDC_DATA_PATH)
