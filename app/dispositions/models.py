@@ -131,7 +131,7 @@ class Dispositions(BaseDB):
         for i, disposition_row in enumerate(disposition_data, start=1):
             
             # header is the first line of the array
-            header = txt_array[0]
+            header = disposition_data[0]
             
             # create a new criminal disposition
             disposition = cls()
@@ -169,7 +169,7 @@ class Dispositions(BaseDB):
             raise  
         
         # create a BeautifulSoup object with the content of the response
-        soup = bs4.BeautifulSoup(response.text)
+        soup = bs4.BeautifulSoup(response.text, 'html.parser')
         
         # capture the form (name and id attributes hardcoded, they were found by looking at the page source)
         submit_form = soup.find_all('form', attrs={'id': 'aspnetForm', 'name': 'aspnetForm'})
