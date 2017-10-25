@@ -32,7 +32,7 @@
 	"dispdt": "disposition_date",
 	"disposition": "disposition",
 	"sentence": "sentence",
-	"com_name": "complainant_name",
+	"comp_nam": "complainant_name",
 	"comp_agency": "complainant_agency",
 	"off_rpt_num": "offense_report_number"
 	
