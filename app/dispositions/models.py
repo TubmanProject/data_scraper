@@ -203,7 +203,7 @@ class Dispositions(BaseDB):
         # check the response for a dataset file 
         if 'Content-Disposition' not in r.headers:
             # raise a file not found exception
-            raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), filename)
+            raise OSError(errno.ENOENT, os.strerror(errno.ENOENT), filename)
         
         # create the directory if it doesn't exist
         if not os.path.exists(os.path.dirname(os.path.join(HCDC_CRIMINAL_DISPOSITION_PATH, filename))):
