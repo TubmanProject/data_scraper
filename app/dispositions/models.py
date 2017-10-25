@@ -71,34 +71,39 @@ class Dispositions(BaseDB):
         
         # initialize
         not_found = 0
+        num_found = 0
         found = True
         date = datetime.datetime.today()
         
         # while 14 consecutive days of not being able to download a dataset
         while not_found <= 14:
             try:
-                download_disposition_report_by_date(date)
+                cls.download_disposition_report_by_date(date)
             except:
                 found = False
-                not_found += 1  
-            
-            if found:
-                # TODO: fix this
-                # wait for the file to be downloaded
-                filename = '%s_criminal_disposition.txt'%(date.strftime('%Y-%m-%d'))
-                file_path = os.path.join(HCDC_CRIMINAL_DISPOSITION_PATH, filename)
-                while not os.path.exists(file_path):
-                    time.sleep(1)
-                
-                not_found = 0
-                try:
-                    parse_disposition_data_by_date(date)
-                except:
-                    pass
+                not_found += 1
+            finally:
+                if found:
+                    # TODO: fix this
+                    # wait for the file to be downloaded
+                    filename = '%s_criminal_disposition.txt'%(date.strftime('%Y-%m-%d'))
+                    file_path = os.path.join(HCDC_CRIMINAL_DISPOSITION_PATH, filename)
+                    while not os.path.exists(file_path):
+                        time.sleep(1)
+                    
+                    not_found = 0
+                    try:
+                        cls.parse_disposition_data_by_date(date)
+                    except:
+                        pass
+                    else:
+                        num_found += 1
             
             # reset and decrement date
             found = True
-            date = date - datetime.timedelta(days=1)     
+            date = date - datetime.timedelta(days=1) 
+        
+        return num_found    
     
     @classmethod
     def parse_disposition_data_by_date(cls, datetime_obj):

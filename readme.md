@@ -6,7 +6,7 @@ This project was started to support a module of the [Tubman Project](http://www.
 A database of criminal filings and dispositions will provide the input data for machine learning applications that can predict the likelihood of upcharges in criminal cases or discover bias trends in court decisions.  
 
 ## Build status
-Incomplete not working
+TBD - need to build tests
 
 ## Technology and Frameworks Used
 #### Built with

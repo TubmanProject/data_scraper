@@ -37,8 +37,23 @@ def scrape_disposition_today():
        parsed = Dispositions.parse_disposition_data_by_date(today)
     except Exception as err:
         return Response.make_error_resp(msg=str(err), type=err.__class__.__name__, code=500) 
-    
-    if parsed:
-        return Response.make_success_resp(msg="Disposition report for today has been saved to the database.")
-    else: 
-        return Response.make_error_resp(msg="Error: Unknown error parsing the disposition data file", type="Error", code=500)
+    finally:
+        if parsed:
+            return Response.make_success_resp(msg="Disposition report for today has been saved to the database.")
+        else: 
+            return Response.make_error_resp(msg="Error: Unknown error parsing the disposition data file", type="Error", code=500)
+
+@scraper.route('/disposition/seed_db', methods=['POST'])
+def seed_disposition_db():
+     try:
+        num_found = Dispositions.seed_db()
+     except Exception as err:
+        if err.__class__.__name__ == 'HTTPError':
+            return Response.make_error_resp(msg=err.response.reason, type=err.__class__.__name__, code=err.response.status_code)
+        else:
+            return Response.make_error_resp(msg=str(err), type=err.__class__.__name__, code=500)
+     finally:    
+         if num_found:
+            return Response.make_success_resp(msg="%s disposition reports have been added to the database."%(num_found))
+         else: 
+            return Response.make_error_resp(msg="Error: Unknown error seeding the disposition database.", type="Error", code=500) 
