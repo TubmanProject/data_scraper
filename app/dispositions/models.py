@@ -172,7 +172,7 @@ class Dispositions(BaseDB):
         soup = bs4.BeautifulSoup(response.text)
         
         # capture the form (name and id attributes hardcoded, they were found by looking at the page source)
-        submit_form = soup.find_all('form', id='aspnetForm', name='aspnetForm')
+        submit_form = soup.find_all('form', attrs={'id': 'aspnetForm', 'name': 'aspnetForm'})
         
         # capture all input tags
         input_tags = soup.find_all('input')
