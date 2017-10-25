@@ -45,6 +45,10 @@ def scrape_disposition_today():
 
 @scraper.route('/disposition/seed_db', methods=['POST'])
 def seed_disposition_db():
+     """
+     This endpoint doesn't work.
+     The HCDC public dataset website doesn't seem to archive disposition data
+     """
      try:
         num_found = Dispositions.seed_db()
      except Exception as err:

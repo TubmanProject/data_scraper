@@ -63,6 +63,8 @@ class Dispositions(BaseDB):
     @classmethod
     def seed_db(cls):
         """
+        Note: The HCDC public dataset website doesn't seem to archive disposition data; therefore, this method does not work as expected.
+        
         Download past disposition reports from the HCDC Public Dataset website, parse them, and add to the database.
         Use the not_found counter to determine when there are no more past dataset remaining.
         The assumption is that when 14 days have passed and there are no dataset files available for download the end has been reach.
@@ -73,7 +75,9 @@ class Dispositions(BaseDB):
         not_found = 0
         num_found = 0
         found = True
-        date = datetime.datetime.today()
+        
+        # start yesterday
+        date = datetime.datetime.today() - datetime.timedelta(days=1)
         
         # while 14 consecutive days of not being able to download a dataset
         while not_found <= 14:

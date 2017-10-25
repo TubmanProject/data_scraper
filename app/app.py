@@ -100,7 +100,7 @@ def configure_extensions(app):
             DocketCalendarName.seed_db(HCDC_DATA_PATH)
             CalendarReason.seed_db(HCDC_DATA_PATH)
             DefendantRace.seed_db(HCDC_DATA_PATH)
-            Dispositions.seed_db()
+            #Dispositions.seed_db()
     
     @app.cli.command('initdb')
     def initdb_command():
