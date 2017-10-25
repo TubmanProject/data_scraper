@@ -6,6 +6,7 @@ from . import config as Config
 from .api import scraper
 from .extensions import db, mail
 from .response import Response
+from .hcdc_fields import CourtDivisionIndicator, InstrumentType, CaseDisposition, CaseStatus, DefendantStatus, CurrentOffenseLevelDegree, DocketCalendarName, CalendarReason, DefendantRace
 
 # only import the create_app() function when from app import * is called
 __all__ = ['create_app']
@@ -87,6 +88,15 @@ def configure_extensions(app):
     with app.app_context():
         def init_db():
             db.create_all()
+            CourtDivisionIndicator.seed_db(Config.HCDC_DATA_PATH)
+            InstrumentType.seed_db(Config.HCDC_DATA_PATH)
+            CaseDisposition.seed_db(Config.HCDC_DATA_PATH)
+            CaseStatus.seed_db(Config.HCDC_DATA_PATH)
+            DefendantStatus.seed_db(Config.HCDC_DATA_PATH)
+            CurrentOffenseLevelDegree.seed_db(Config.HCDC_DATA_PATH)
+            DocketCalendarName.seed_db(Config.HCDC_DATA_PATH)
+            CalendarReason.seed_db(Config.HCDC_DATA_PATH)
+            DefendantRace.seed_db(Config.HCDC_DATA_PATH)
     
     @app.cli.command('initdb')
     def initdb_command():

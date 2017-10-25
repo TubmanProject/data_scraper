@@ -1,4 +1,7 @@
+import os
+import json
 from ..extensions import BaseDB, db
+
 
 class CourtDivisionIndicator(BaseDB):
     
@@ -17,6 +20,31 @@ class CourtDivisionIndicator(BaseDB):
     def __repr__(self):
         pass
     
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
+        
+    
 class InstrumentType(BaseDB):
     
     # tablename
@@ -33,6 +61,30 @@ class InstrumentType(BaseDB):
     
     def __repr__(self):
         pass
+    
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
 
 class CaseDisposition(BaseDB):
     
@@ -51,6 +103,30 @@ class CaseDisposition(BaseDB):
     def __repr__(self):
         pass
     
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
+    
 class CaseStatus(BaseDB):
     
     # tablename
@@ -67,6 +143,30 @@ class CaseStatus(BaseDB):
     
     def __repr__(self):
         pass
+    
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
     
 class DefendantStatus(BaseDB):
     
@@ -85,6 +185,30 @@ class DefendantStatus(BaseDB):
     def __repr__(self):
         pass
     
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
+    
 class CurrentOffenseLevelDegree(BaseDB):
     
     # tablename
@@ -101,6 +225,30 @@ class CurrentOffenseLevelDegree(BaseDB):
     
     def __repr__(self):
         pass
+    
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
 
 class DocketCalendarName(BaseDB):
     
@@ -118,6 +266,30 @@ class DocketCalendarName(BaseDB):
     
     def __repr__(self):
         pass
+    
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
 
 class CalendarReason(BaseDB):
     
@@ -136,6 +308,30 @@ class CalendarReason(BaseDB):
     def __repr__(self):
         pass
     
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
+    
 class DefendantRace(BaseDB):
     
     # tablename
@@ -152,3 +348,27 @@ class DefendantRace(BaseDB):
     
     def __repr__(self):
         pass
+    
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()

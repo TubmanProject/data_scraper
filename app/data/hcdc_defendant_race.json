@@ -1,0 +1,26 @@
+[
+    {
+        "code": "A",
+        "definition": "ASIAN OR PACIFIC ISLANDER"
+    },
+    {
+        "code": "B",
+        "definition": "BLACK"
+    },
+    {
+        "code": "I",
+        "definition": "NATIVE AMERICAN"
+    },
+    {
+        "code": "M",
+        "definition": "MULTIRACIAL"
+    },
+    {
+        "code": "U",
+        "definition": "UNKNOWN"
+    },
+    {
+        "code": "W",
+        "definition": "WHITE"
+    }
+]

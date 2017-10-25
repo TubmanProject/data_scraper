@@ -6,3 +6,4 @@ beautifulsoup4
 Werkzeug
 Flask-Mail
 Flask_Uploads
+sqlite3

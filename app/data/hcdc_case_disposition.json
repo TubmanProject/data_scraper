@@ -1,0 +1,162 @@
+[
+    {
+        "code": "AFFM",
+        "definition": "AFFIRMATIVE FINDING"
+    },
+    {
+        "code": "APPL",
+        "definition": "APPEAL"
+    },
+    {
+        "code": "AUTO",
+        "definition": "AUTOMATIC DISPOSITION (SPECIAL)"
+    },
+    {
+        "code": "BFPD",
+        "definition": "BOND FORFEITURE PAID"
+    },
+    {
+        "code": "CABS",
+        "definition": "ABSCONDED"
+    },
+    {
+        "code": "CDTH",
+        "definition": "DEATH OF PROBATIONER"
+    },
+    {
+        "code": "CETR",
+        "definition": "EARLY TERMINATION"
+    },
+    {
+        "code": "CEXP",
+        "definition": "PROBATION EXPIRED"
+    },
+    {
+        "code": "CLAW",
+        "definition": "LAW VIOLATION"
+    },
+    {
+        "code": "CMOV",
+        "definition": "MOVED FROM HARRIS COUNTY"
+    },
+    {
+        "code": "COMM",
+        "definition": "DEF. COMMITTED TO JAIL FOR FINE & COSTS"
+    },
+    {
+        "code": "COND",
+        "definition": "CONDITIONAL DISCHARGE"
+    },
+    {
+        "code": "COTH",
+        "definition": "OTHER REASON"
+    },
+    {
+        "code": "CREJ",
+        "definition": "SUPERVISION REJECTED"
+    },
+    {
+        "code": "CREQ",
+        "definition": "REQUEST OF ORIGINAL JURISDICTION"
+    },
+    {
+        "code": "CRVK",
+        "definition": "PROBATION REVOKED"
+    },
+    {
+        "code": "CTEC",
+        "definition": "TECHNICAL VIOLATION"
+    },
+    {
+        "code": "DADJ",
+        "definition": "DEFERRED ADJUDICATION OF GUILT"
+    },
+    {
+        "code": "DEFD",
+        "definition": "DEFERRED DISPOSITION"
+    },
+    {
+        "code": "DERR",
+        "definition": "DISPOSITION TO FOLLOW"
+    },
+    {
+        "code": "DISM",
+        "definition": "DISMISSED"
+    },
+    {
+        "code": "DISP",
+        "definition": "DISPOSED"
+    },
+    {
+        "code": "DWOP",
+        "definition": "CIVIL DISMISSAL FOR WANT OF PROSECUTION"
+    },
+    {
+        "code": "EXPG",
+        "definition": "EXPUNGED RECORD"
+    },
+    {
+        "code": "FINE",
+        "definition": "FINED"
+    },
+    {
+        "code": "GILT",
+        "definition": "FOUND GUILTY"
+    },
+    {
+        "code": "NEGF",
+        "definition": "NEGATIVE FINDING"
+    },
+    {
+        "code": "NEWT",
+        "definition": "NEW TRIAL"
+    },
+    {
+        "code": "NOB",
+        "definition": "NO BILLED"
+    },
+    {
+        "code": "NOTG",
+        "definition": "FOUND NOT GUILTY"
+    },
+    {
+        "code": "NPCF",
+        "definition": "NO PROBABLE CAUSE FOUND"
+    },
+    {
+        "code": "PART",
+        "definition": "PARTIAL PAYMENT"
+    },
+    {
+        "code": "PDFC",
+        "definition": "PAID FINE AND COSTS - JP COURTS"
+    },
+    {
+        "code": "PROB",
+        "definition": "PROBATION"
+    },
+    {
+        "code": "PTIN",
+        "definition": "PRETRIAL INTERVENTION CSCD"
+    },
+    {
+        "code": "REIN",
+        "definition": "BOND REINSTATED"
+    },
+    {
+        "code": "REVS",
+        "definition": "CASE REVERSED"
+    },
+    {
+        "code": "SENT",
+        "definition": "SENTENCED"
+    },
+    {
+        "code": "TEMP",
+        "definition": "TEMPORARY"
+    },
+    {
+        "code": "USTP",
+        "definition": "UNSATISFACTORY TERMINATION  OF PROBATION"
+    }
+]
