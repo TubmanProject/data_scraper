@@ -137,8 +137,8 @@ def get_config(MODE=None):
     Return the configuration mode based on the APPLICATION_MODE env variable 
     """
     return {
-        'DEVELOPMENT' : DevConfig,
+        'DEVELOPMENT' : DevelopmentConfig,
         'STAGING' : StagingConfig,
-        'PRODUCTION' : ProdConfig,
+        'PRODUCTION' : ProductionConfig,
         'TESTING' : TestConfig
-    }.get(MODE, DefaultConfig)
+    }.get(MODE, DevelopmentConfig)

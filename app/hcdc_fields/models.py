@@ -22,7 +22,7 @@ class CourtDivisionIndicator(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -64,7 +64,7 @@ class InstrumentType(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -105,7 +105,7 @@ class CaseDisposition(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -146,7 +146,7 @@ class CaseStatus(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -187,7 +187,7 @@ class DefendantStatus(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -228,7 +228,7 @@ class CurrentOffenseLevelDegree(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -269,7 +269,7 @@ class DocketCalendarName(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -310,7 +310,7 @@ class CalendarReason(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file
@@ -351,7 +351,7 @@ class DefendantRace(BaseDB):
     
     @classmethod
     def seed_db(cls, data_path):
-        data_filename = 'hcdc_%s.json'%(__tablename__)
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
         data_filepath = os.path.join(data_path, data_filename)
         
          # open data file

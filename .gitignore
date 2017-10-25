@@ -105,3 +105,4 @@ venv.bak/
 
 .project
 app/tmp/
+app/data/sqlite
