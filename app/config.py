@@ -45,7 +45,7 @@ class DefaultConfig(object):
     # SQLALCHEMY_POOL_TIMEOUT = 10
     # SQLALCHEMY_POOL_RECYCLE = 2 * 60 * 60
     # SQLALCHEMY_MAX_OVERFLOW = 10
-    # SQLALCHEMY_TRACK_MODIFICATIONS = <bool>
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     ########################
     # Sentry Configuration #
@@ -127,7 +127,7 @@ class DevelopmentConfig(DefaultConfig):
     SQLALCHEMY_DATABASE_URI = 'sqlite:///' + os.path.join(DefaultConfig.HCDC_DATA_PATH, 'sqlite', 'development.db')
     # SQLALCHEMY_ECHO = True
     # SQLALCHEMY_RECORD_QUERIES = True
-    # SQLALCHEMY_TRACK_MODIFICATIONS = True
+    SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 class TestConfig(DefaultConfig):
     pass
