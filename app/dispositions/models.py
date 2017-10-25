@@ -2,6 +2,7 @@ from ..extensions import BaseDB, db
 from ..constants import HCDC_CRIMINAL_DISPOSITION_PATH, HCDC_CRIMINAL_FILING_PATH, HCDC_DATA_PATH
 
 import os
+import errno
 import datetime
 import json
 import datetime
@@ -166,7 +167,7 @@ class Dispositions(BaseDB):
         except requests.exceptions.HTTPError:
             raise
         except requests.exceptions.RequestException:
-            raise  
+            raise
         
         # create a BeautifulSoup object with the content of the response
         soup = bs4.BeautifulSoup(response.text, 'html.parser')
@@ -198,6 +199,11 @@ class Dispositions(BaseDB):
             raise
         
         filename = '%s_criminal_disposition.txt'%(date)
+        
+        # check the response for a dataset file 
+        if 'Content-Disposition' not in r.headers:
+            # raise a file not found exception
+            raise FileNotFoundError(errno.ENOENT, os.strerror(errno.ENOENT), filename)
         
         # create the directory if it doesn't exist
         if not os.path.exists(os.path.dirname(os.path.join(HCDC_CRIMINAL_DISPOSITION_PATH, filename))):
