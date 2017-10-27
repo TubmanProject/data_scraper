@@ -372,3 +372,85 @@ class DefendantRace(BaseDB):
         
         # save database session to the database
         db.session.commit()
+
+class DefendantBirthplace(BaseDB):
+    
+    # tablename
+    __tablename__ = 'defendant_birthplace'
+    
+    # table columns
+    code                                    = db.Column(db.VARCHAR(2), unique=True, nullable=False)
+    definition                              = db.Column(db.VARCHAR(255), nullable=False)
+    
+    # relationships
+    
+    def __init__(self):
+        pass
+    
+    def __repr__(self):
+        pass
+    
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()
+
+class DefendantUSCitizen(BaseDB):
+    
+    # tablename
+    __tablename__ = 'defendant_uscitizen'
+    
+    # table columns
+    code                                    = db.Column(db.VARCHAR(1), unique=True, nullable=False)
+    definition                              = db.Column(db.VARCHAR(255), nullable=False)
+    
+    # relationships
+    
+    def __init__(self):
+        pass
+    
+    def __repr__(self):
+        pass
+    
+    @classmethod
+    def seed_db(cls, data_path):
+        data_filename = 'hcdc_%s.json'%(cls.__tablename__)
+        data_filepath = os.path.join(data_path, data_filename)
+        
+         # open data file
+        try: 
+            with open(data_filepath, 'r') as f:
+                data = json.load(f)
+        except EnvironmentError:
+            raise
+        
+        for d in data:
+            # create instance of class
+            new_instance = cls()
+            new_instance.code = d['code']
+            new_instance.definition = d['definition']
+            
+            # add the new instance of the class to the db session
+            db.session.add(new_instance)
+        
+        # save database session to the database
+        db.session.commit()

@@ -1,1 +1,1 @@
-from .models import CourtDivisionIndicator, InstrumentType, CaseDisposition, CaseStatus, DefendantStatus, CurrentOffenseLevelDegree, DocketCalendarName, CalendarReason, DefendantRace
+from .models import CourtDivisionIndicator, InstrumentType, CaseDisposition, CaseStatus, DefendantStatus, CurrentOffenseLevelDegree, DocketCalendarName, CalendarReason, DefendantRace, DefendantBirthplace, DefendantUSCitizen

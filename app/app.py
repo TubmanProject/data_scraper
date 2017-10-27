@@ -7,8 +7,7 @@ from .api import scraper
 from .constants import HCDC_CRIMINAL_DISPOSITION_PATH, HCDC_CRIMINAL_FILING_PATH, HCDC_DATA_PATH
 from .extensions import db, mail
 from .response import Response
-from .hcdc_fields import CourtDivisionIndicator, InstrumentType, CaseDisposition, CaseStatus, DefendantStatus, CurrentOffenseLevelDegree, DocketCalendarName, CalendarReason, DefendantRace
-from .dispositions import Dispositions
+from .hcdc_fields import CourtDivisionIndicator, InstrumentType, CaseDisposition, CaseStatus, DefendantStatus, CurrentOffenseLevelDegree, DocketCalendarName, CalendarReason, DefendantRace, DefendantBirthplace, DefendantUSCitizen
 
 # only import the create_app() function when from app import * is called
 __all__ = ['create_app']
@@ -100,7 +99,8 @@ def configure_extensions(app):
             DocketCalendarName.seed_db(HCDC_DATA_PATH)
             CalendarReason.seed_db(HCDC_DATA_PATH)
             DefendantRace.seed_db(HCDC_DATA_PATH)
-            #Dispositions.seed_db()
+            DefendantBirthplace.seed_db(HCDC_DATA_PATH)
+            DefendantUSCitizen.seed_db(HCDC_DATA_PATH)
     
     @app.cli.command('initdb')
     def initdb_command():

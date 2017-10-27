@@ -60,7 +60,89 @@ $ pip freeze > requirements.txt
 ```
 
 ## API Reference
-TBD
+### Scrape Today's Criminal Disposition
+----
+Download the *CrimDisposDaily_withHeadings.txt* file from http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx for today, parse the data and save it into a database.
+* **URL**
+  /api/scraper/disposition/today
+
+* **Method**
+  `GET`
+
+* **URL Params**
+  None
+
+* **Data Params**
+  None
+  
+*  **Success Response**
+   **Code:** 200 <br />
+   **Content:**
+   ```
+   {
+     "success": True,
+     "message": "Disposition report for today has been saved to the database."
+   }
+   ```
+   
+* **Error Response**
+  **Code:** 4/5XX <br>
+  **Content:**
+  ```
+  {
+  	"errors": {
+  	  "code": code,
+  	  "message": message,
+  	  "type": type
+  	}
+  }
+  ```
+* **Sample Call**
+  ```
+  curl -X POST http://127.0.0.1:5000/api/scraper/disposition/today
+  ```
+
+### Scrape Today's Criminal Filing
+----
+Download the *CrimFilingsDaily_withHeadings.txt* file from http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx for today, parse the data and save it into a database.
+* **URL**
+  /api/scraper/filing/today
+
+* **Method**
+  `GET`
+
+* **URL Params**
+  None
+
+* **Data Params**
+  None
+  
+*  **Success Response**
+   **Code:** 200 <br />
+   **Content:**
+   ```
+   {
+     "success": True,
+     "message": "Filing report for today has been saved to the database."
+   }
+   ```
+   
+* **Error Response**
+  **Code:** 4/5XX <br>
+  **Content:**
+  ```
+  {
+  	"errors": {
+  	  "code": code,
+  	  "message": message,
+  	  "type": type
+  	}
+  }
+  ```
+* **Sample Call**
+  ```
+  curl -X POST http://127.0.0.1:5000/api/scraper/filing/today
+  ```
 
 ## How to use?
 ### Configuration
@@ -97,8 +179,6 @@ Flask project layout and directory structure has been influenced by the [DoubleD
 ## License
 
 ## TODO
-* Handle file not found exceptions to prevent the rest of code from running
-* Add criminal filings
+* Fine tune exception handling
 * Abstract out defendants as a separate model
 * Convert to Python > 3.5 and use asyncio
-* Add database seeding with data from past dispositions and filings and field names

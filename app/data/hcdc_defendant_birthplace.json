@@ -132,10 +132,6 @@
         "definition": "BELIZE (FORMERLY BRITISH HONDURAS)"
     },
     {
-        "code": "BH",
-        "definition": "BRITISH HONDURAS"
-    },
-    {
         "code": "BI",
         "definition": "BURUNDI"
     },
@@ -166,10 +162,6 @@
     {
         "code": "BP",
         "definition": "BOSNIA AND HERCEGOVENA"
-    },
-    {
-        "code": "BP",
-        "definition": "HERCEGOVENA AND BOSNIA"
     },
     {
         "code": "BQ",
@@ -326,10 +318,6 @@
     {
         "code": "DD",
         "definition": "COCOS (KEELING) ISLANDS, TERRITORY OF (AUSTRALIAN)"
-    },
-    {
-        "code": "DD",
-        "definition": "KEELING (COCOS) ISLANDS (AUSTRALIAN DEPENDENCY)"
     },
     {
         "code": "DE",
@@ -1037,15 +1025,7 @@
     },
     {
         "code": "NX",
-        "definition": "BONAIRE (NETHERLANDS ANTILLES)"
-    },
-    {
-        "code": "NX",
         "definition": "CURACAO (NETHERLANDS ANTILLES)"
-    },
-    {
-        "code": "NX",
-        "definition": "NORTHERN ANTILLES"
     },
     {
         "code": "NY",
@@ -1197,15 +1177,7 @@
     },
     {
         "code": "RG",
-        "definition": "GIBRALTAR"
-    },
-    {
-        "code": "RG",
         "definition": "GIBRALTAR (DEPENDENT TERRITORY OF UNITED KINGDOM)"
-    },
-    {
-        "code": "RH",
-        "definition": "RHODESIA/ZIMBABWE"
     },
     {
         "code": "RH",
@@ -1281,10 +1253,6 @@
     },
     {
         "code": "SJ",
-        "definition": "SOUTH-WEST AFRICA"
-    },
-    {
-        "code": "SJ",
         "definition": "SOUTH-WEST AFRICA (NAMIBIA)"
     },
     {
@@ -1341,15 +1309,7 @@
     },
     {
         "code": "SX",
-        "definition": "RUSSIA (USSR REFERENCE ONLY)"
-    },
-    {
-        "code": "SX",
         "definition": "SOVIET UNION"
-    },
-    {
-        "code": "SX",
-        "definition": "USSR"
     },
     {
         "code": "SY",
@@ -1374,10 +1334,6 @@
     {
         "code": "TD",
         "definition": "TRUST TERRITORY OF THE PACIFIC ISLANDS"
-    },
-    {
-        "code": "TE",
-        "definition": "SPATLY ISLANDS"
     },
     {
         "code": "TE",
@@ -1500,12 +1456,8 @@
         "definition": "BURKINA FASO (FORMERLY UPPER VOLTA)"
     },
     {
-        "code": "UV",
-        "definition": "UPPER VOLTA"
-    },
-    {
         "code": "UY",
-        "definition": "URUGUAY    (SOUTH AMERICA)"
+        "definition": "URUGUAY (SOUTH AMERICA)"
     },
     {
         "code": "UZ",
@@ -1521,7 +1473,7 @@
     },
     {
         "code": "VC",
-        "definition": "VERACRUZ    (MEXICAN STATE)"
+        "definition": "VERACRUZ (MEXICAN STATE)"
     },
     {
         "code": "VI",
