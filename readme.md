@@ -66,38 +66,39 @@ Download the *CrimDisposDaily_withHeadings.txt* file from http://www.hcdistrictc
 * **URL**
   /api/scraper/disposition/today
 
-* **Method**
-  `GET`
+* **Method:**
+  `POST`
 
-* **URL Params**
+* **URL Params:**
   None
 
-* **Data Params**
+* **Data Params:**
   None
   
-*  **Success Response**
-   **Code:** 200 <br />
-   **Content:**
-   ```
-   {
-     "success": True,
-     "message": "Disposition report for today has been saved to the database."
-   }
-   ```
+*  **Success Response:**
+   * **Code:** 200 <br />
+     **Content:**
+     ```
+     {
+       "success": True,
+       "message": "Disposition report for today has been saved to the database."
+     }
+     ```
    
-* **Error Response**
-  **Code:** 4/5XX <br>
-  **Content:**
-  ```
-  {
-  	"errors": {
-  	  "code": code,
-  	  "message": message,
-  	  "type": type
-  	}
-  }
-  ```
-* **Sample Call**
+* **Error Response:**
+  * **Code:** 4/5XX <br>
+    **Content:**
+    ```
+    {
+  	  "errors": {
+  	    "code": code,
+  	    "message": message,
+  	    "type": type
+  	  }
+    }
+    ```
+
+* **Sample Call:**
   ```
   curl -X POST http://127.0.0.1:5000/api/scraper/disposition/today
   ```
@@ -105,41 +106,41 @@ Download the *CrimDisposDaily_withHeadings.txt* file from http://www.hcdistrictc
 ### Scrape Today's Criminal Filing
 ----
 Download the *CrimFilingsDaily_withHeadings.txt* file from http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx for today, parse the data and save it into a database.
-* **URL**
+* **URL:**
   /api/scraper/filing/today
 
-* **Method**
-  `GET`
+* **Method:**
+  `POST`
 
-* **URL Params**
+* **URL Params:**
   None
 
-* **Data Params**
+* **Data Params:**
   None
   
-*  **Success Response**
-   **Code:** 200 <br />
-   **Content:**
-   ```
-   {
-     "success": True,
-     "message": "Filing report for today has been saved to the database."
-   }
-   ```
+*  **Success Response:**
+   * **Code:** 200 <br />
+     **Content:**
+     ```
+     {
+       "success": True,
+       "message": "Filing report for today has been saved to the database."
+     }
+     ```
    
-* **Error Response**
-  **Code:** 4/5XX <br>
-  **Content:**
-  ```
-  {
-  	"errors": {
-  	  "code": code,
-  	  "message": message,
-  	  "type": type
-  	}
-  }
-  ```
-* **Sample Call**
+* **Error Response:**
+  * **Code:** 4/5XX <br>
+    **Content:**
+    ```
+    {
+  	  "errors": {
+  	    "code": code,
+  	    "message": message,
+  	    "type": type
+  	  }
+    }
+    ```
+* **Sample Call:**
   ```
   curl -X POST http://127.0.0.1:5000/api/scraper/filing/today
   ```
