@@ -60,8 +60,7 @@ $ pip freeze > requirements.txt
 ```
 
 ## API Reference
-### Scrape Today's Criminal Disposition
-----
+#### Scrape Today's Criminal Disposition
 Download the *CrimDisposDaily_withHeadings.txt* file from http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx for today, parse the data and save it into a database.
 * **URL**
   /api/scraper/disposition/today
@@ -103,8 +102,7 @@ Download the *CrimDisposDaily_withHeadings.txt* file from http://www.hcdistrictc
   curl -X POST http://127.0.0.1:5000/api/scraper/disposition/today
   ```
 
-### Scrape Today's Criminal Filing
-----
+#### Scrape Today's Criminal Filing
 Download the *CrimFilingsDaily_withHeadings.txt* file from http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx for today, parse the data and save it into a database.
 * **URL:**
   /api/scraper/filing/today
