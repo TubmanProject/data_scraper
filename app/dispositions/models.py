@@ -209,7 +209,8 @@ class Dispositions(BaseDB):
         
         filename = '%s_criminal_disposition.txt'%(date)
         
-        # check the response for a dataset file 
+        # check the response for a dataset file
+        # responses with attachements include the Content-Disposition header and the header Content-Type: text/plain 
         if 'Content-Disposition' not in r.headers:
             # raise a file not found exception
             raise OSError(errno.ENOENT, os.strerror(errno.ENOENT), filename)

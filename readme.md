@@ -62,7 +62,7 @@ $ pip freeze > requirements.txt
 ## API Reference
 #### Scrape Today's Criminal Disposition
 Download the *CrimDisposDaily_withHeadings.txt* file from http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx for today, parse the data and save it into a database.
-* **URL**
+* **URL:**
   /api/scraper/disposition/today
 
 * **Method:**
@@ -178,6 +178,6 @@ Flask project layout and directory structure has been influenced by the [DoubleD
 ## License
 
 ## TODO
-* Fine tune exception handling
+* Fine tune exception and error handling
 * Abstract out defendants as a separate model
 * Convert to Python > 3.5 and use asyncio
