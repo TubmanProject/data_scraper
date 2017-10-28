@@ -62,7 +62,7 @@ $ pip freeze > requirements.txt
 ## API Reference
 #### Scrape Today's Criminal Disposition
 Download the *CrimDisposDaily_withHeadings.txt* file from http://www.hcdistrictclerk.com/Common/e-services/PublicDatasets.aspx for today, parse the data and save it into a database.
-* **URL**
+* **URL:**
   /api/scraper/disposition/today
 
 * **Method:**
@@ -170,7 +170,10 @@ The application should now be running on at localhost:5000.
 Call the API endpoints described above i.e. `curl -X POST http://127.0.0.1:5000/api/scraper/disposition/today`
 
 ## Contribute
-TBD
+The git branching model is influenced by this [article](http://nvie.com/posts/a-successful-git-branching-model/) http://nvie.com/posts/a-successful-git-branching-model/.
+
+### Overview
+The master branch reflects code in a production-ready state. The develop branch reflects the latest development changes that should be merged into the master branch.
 
 ## Credits
 Flask project layout and directory structure has been influenced by the [DoubleDibz](https://github.com/spchuang/DoubleDibz-tutorial/tree/master/FINAL) project created by [spchuang](https://github.com/spchuang)
@@ -178,6 +181,6 @@ Flask project layout and directory structure has been influenced by the [DoubleD
 ## License
 
 ## TODO
-* Fine tune exception handling
+* Fine tune exception and error handling
 * Abstract out defendants as a separate model
 * Convert to Python > 3.5 and use asyncio
