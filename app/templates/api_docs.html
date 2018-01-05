@@ -1,0 +1,1279 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Tubman Project API Documentation</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="static/assets/images/favicon.ico" rel="icon" type="image/ico" />
+    <link href="static/assets/css/screen.css" rel="stylesheet" media="screen" />
+    <link href="static/assets/css/print.css" rel="stylesheet" media="print" />
+      <script src="static/assets/javascript/all.js"></script>
+  </head>
+
+  <body class="index" data-languages="[&quot;shell&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="static/assets/images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="static/assets/images/logo.png" class="logo" alt="Logo" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="shell">cURL</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <div id="toc" class="toc-list-h1">
+          <li>
+            <a href="#overview" class="toc-h1 toc-link" data-title="Overview">Overview</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#what-is-the-tubman-project" class="toc-h2 toc-link" data-title="What is the Tubman Project">What is the Tubman Project</a>
+                  </li>
+                  <li>
+                    <a href="#who-is-the-tubman-project-api-for" class="toc-h2 toc-link" data-title="Who is the Tubman Project API for?">Who is the Tubman Project API for?</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started">Getting Started</a>
+          </li>
+          <li>
+            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+          </li>
+          <li>
+            <a href="#dispositions" class="toc-h1 toc-link" data-title="Dispositions">Dispositions</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-dispositions" class="toc-h2 toc-link" data-title="Get Dispositions">Get Dispositions</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#filings" class="toc-h1 toc-link" data-title="Filings">Filings</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-filings" class="toc-h2 toc-link" data-title="Get Filings">Get Filings</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#fields" class="toc-h1 toc-link" data-title="Fields">Fields</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-fields" class="toc-h2 toc-link" data-title="Get Fields">Get Fields</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+          </li>
+      </div>
+        <ul class="toc-footer">
+            <li><a href='http://www.tubmanproject.com'>Tubman Project</a></li>
+            <li><a href='https://tubmanproject-jupyterhub.mintyross.com'>JupyterHub</a></li>
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='overview'>Overview</h1><h2 id='what-is-the-tubman-project'>What is the Tubman Project</h2>
+<p>The Tubman Project&#39;s mission is to...</p>
+<h2 id='who-is-the-tubman-project-api-for'>Who is the Tubman Project API for?</h2>
+<p>This Tubman Project is for...</p>
+<h3 id='defendants'>Defendants</h3>
+<p>TODO: Common tasks expected...</p>
+
+<ul>
+<li>research their specific circumstances and compare</li>
+</ul>
+<h3 id='public-defenders-and-hired-attorneys'>Public Defenders and Hired Attorneys</h3>
+<p>TODO: Common tasks expected</p>
+
+<ul>
+<li> Help defendants when pressed for time</li>
+</ul>
+<h3 id='developers'>Developers</h3>
+<p>TODO: Common tasks expected...</p>
+
+<ul>
+<li>Develop applications based on data</li>
+<li>Experiment with developing machine learning models on the Tubman Project&#39;s JupyterHub.</li>
+</ul>
+<h1 id='getting-started'>Getting Started</h1>
+<p>The Tubman Project API exposes a web service that allows you to interact with our system programmatically from your own application.  The following resources are exposed through the API.</p>
+
+<ul>
+<li>Criminal Dispositions</li>
+<li>Criminal Filings</li>
+</ul>
+
+<p>The API attempts to conform to the <a href="https://en.wikipedia.org/wiki/Representational_State_Transfer">RESTful</a> design principles.  You interact with the resources exposed via the API by accessing resource collection and element URIs using the HTTP verbs (GET, POST, PUT, and DELETE).</p>
+
+<p>For hint on interacting with the API you can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<h1 id='authentication'>Authentication</h1>
+<p>All endpoints are public. The Tubman Project API does not require authentication.</p>
+<h1 id='dispositions'>Dispositions</h1>
+<p>Criminal case dispositions filed in county or district courts that have a future setting date. Use the Dispositions API calls to request disposition information.</p>
+<h2 id='get-dispositions'>Get Dispositions</h2>
+<blockquote>
+<p>Example Request:</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Content-Type:application/json"</span> -X GET <span class="s2">"http://tubmanproject-api.mintyross.com/v1/dispositions?rundate_min=2018-01-02&amp;rundate_max=2018-01-23&amp;defendant_race=black&amp;current_offense_level_degree=felony"</span>
+</code></pre>
+<blockquote>
+<p>Example Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Query successful"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"batch_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/v1/dispositions?query=L3YxL2Rpc3Bvc2l0aW9ucz9ydW5kYXRlX21pbj0yMDE4LTAxLTAyJnJ1bmRhdGVfbWF4PTIwMTgtMDEtMjMmZGVmZW5kYW50X3JhY2U9YmxhY2smY3VycmVudF9vZmZlbnNlX2xldmVsX2RlZ3JlZT1mZWxvbnk=_1"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/v1/dispositions?query=L3YxL2Rpc3Bvc2l0aW9ucz9ydW5kYXRlX21pbj0yMDE4LTAxLTAyJnJ1bmRhdGVfbWF4PTIwMTgtMDEtMjMmZGVmZW5kYW50X3JhY2U9YmxhY2smY3VycmVudF9vZmZlbnNlX2xldmVsX2RlZ3JlZT1mZWxvbnk=_1"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"L3YxL2Rpc3Bvc2l0aW9ucz9ydW5kYXRlX21pbj0yMDE4LTAxLTAyJnJ1bmRhdGVfbWF4PTIwMTgtMDEtMjMmZGVmZW5kYW50X3JhY2U9YmxhY2smY3VycmVudF9vZmZlbnNlX2xldmVsX2RlZ3JlZT1mZWxvbnk=_1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"query"</span><span class="p">:</span><span class="w"> </span><span class="s2">"L3YxL2Rpc3Bvc2l0aW9ucz9ydW5kYXRlX21pbj0yMDE4LTAxLTAyJnJ1bmRhdGVfbWF4PTIwMTgtMDEtMjMmZGVmZW5kYW50X3JhY2U9YmxhY2smY3VycmVudF9vZmZlbnNlX2xldmVsX2RlZ3JlZT1mZWxvbnk=_1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">67</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"attorney"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"connection"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AAT"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"APPOINTED DEFENSE ATTORNEY"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"JANIK, PAGE E."</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"spn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"60570100"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"bond_amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">2500</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"calendar_reason"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PACA"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRELIMINARY ASSIGNED COURT APPEARANCE"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"case_disposition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DADJ"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEFERRED ADJUDICATION OF GUILT"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"case_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"157534801010"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"case_status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"R"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PENDING COMPLETION OF PROBATION"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"complainant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"agency"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HOUSTON POLICE DEPARTMENT"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ALOBAIDI, A A"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"court"</span><span class="p">:</span><span class="w"> </span><span class="s2">"179"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"court_division_indicator"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"003"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"felony"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"current_offense"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"131408"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ASLT FAM/HOUSE MEM IMPED BRTH/"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"level_degree"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"F3"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FELONY THIRD DEGREE"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"defendant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HOUSTON"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TX"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14222 KIMBERLEY LN"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"KIMBERLEY LN"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"14222"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77079"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"date_of_birth"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1993-03-29T06:00:00Z"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CASTILLO, ALEJANDRO"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"race"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"W"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"WHITE"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"spn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02930670"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"defendant_status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEFERRED ADJUDICATION OF GUILT"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"disposition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEFERRED ADJUD OF GUILT"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"disposition_date"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-02T06:00:00Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"docket_calendar_name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AC"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ASSIGNED COURT"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"filing_date"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2017-12-29T06:00:00Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"instrument_type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FIN"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FELONY INFORMATION"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"next_appearance_date"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-02T06:00:00Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"offense_report_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"162892317"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"rundate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-04T06:00:00Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"sentence"</span><span class="p">:</span><span class="w"> </span><span class="s2">"3 YEARS PROBATION, $600 FINE"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves criminal case dispositions.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/dispositions</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<p>Filter query results by setting query parameters.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+<th>Valid Values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>rundate_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the report run date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>rundate_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest value to search for the report run date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>filing_date_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the filing date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>filing_date_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest value to search for the filing date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>instrument_type</td>
+<td>optional</td>
+<td>string</td>
+<td>Initial charging document, motions to revoke, motions for new trial granted, and appeal documents</td>
+<td>URL encoded text. Example: <code>motion%20new%20trial%20denied</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/instrument_type</code></td>
+</tr>
+<tr>
+<td>case_disposition</td>
+<td>optional</td>
+<td>string</td>
+<td>Final disposition of the case.</td>
+<td>URL encoded text. Example: <code>not%20guilty</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/case_disposition</code></td>
+</tr>
+<tr>
+<td>court_division_indicator</td>
+<td>optional</td>
+<td>string</td>
+<td>Type of case or court</td>
+<td><code>felony</code> <code>misdemeanor</code></td>
+</tr>
+<tr>
+<td>case_status</td>
+<td>optional</td>
+<td>string</td>
+<td>Case status</td>
+<td>URL encoded text. Example: <code>dismissed</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/case_status</code></td>
+</tr>
+<tr>
+<td>defendant_status</td>
+<td>optional</td>
+<td>string</td>
+<td>Defendant status</td>
+<td>URL encoded text. Example: <code>probation</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/defendant_status</code></td>
+</tr>
+<tr>
+<td>bond_amount_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The minimum bond amount in US dollars.</td>
+<td>Examples: <code>500</code> <code>1000</code></td>
+</tr>
+<tr>
+<td>bond_amount_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The maximum bond amount in US dollars.</td>
+<td>Examples : <code>500</code> <code>1000</code></td>
+</tr>
+<tr>
+<td>current_offense</td>
+<td>optional</td>
+<td>string</td>
+<td>The specific offense.</td>
+<td>URL encoded text. Examples: <code>assault</code> <code>poss%20marijuana</code> <code>burglary</code></td>
+</tr>
+<tr>
+<td>next_appearance_date_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the next appearance date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>next_appearance_date_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest value to search for the next appearance date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>docket_calendar_name</td>
+<td>optional</td>
+<td>string</td>
+<td>The calendar/queue which cases sit until ready for trial.</td>
+<td>URL encoded text. Examples: <code>plea</code> <code>probable%20cause</code> <code>jury%20trial</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/docket_calendar_name</code></td>
+</tr>
+<tr>
+<td>calendar_reason</td>
+<td>optional</td>
+<td>string</td>
+<td>The reason for case setting.</td>
+<td>URL encoded text. Examples: <code>motion%20hearing</code> <code>amended</code> <code>jury%20trial</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/calendar_reason</code></td>
+</tr>
+<tr>
+<td>current_offense_level_degree</td>
+<td>optional</td>
+<td>string</td>
+<td>The level and degree of the current offense</td>
+<td>URL encoded text. Examples: <code>felony</code> <code>misdemeanor</code> <code>class%20a</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/current_offense_level_degree</code></td>
+</tr>
+<tr>
+<td>defendant_spn</td>
+<td>optional</td>
+<td>string</td>
+<td>The system person number for the defendant</td>
+<td>Example: <code>2322561</code></td>
+</tr>
+<tr>
+<td>defendant_sex</td>
+<td>optional</td>
+<td>string</td>
+<td>The defendant&#39;s sex</td>
+<td><code>M</code> <code>F</code></td>
+</tr>
+<tr>
+<td>defendant_race</td>
+<td>optional</td>
+<td>string</td>
+<td>The defendant&#39;s race</td>
+<td><code>asian</code> <code>pacific%20islander</code> <code>black</code> <code>native%20american</code> <code>multiracial</code> <code>unknown</code> <code>white</code>.  For a list of valid strings query the following endpoint: <code>GET /v1/fields/defendant_race</code></td>
+</tr>
+<tr>
+<td>defendant_dob_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest date of birth value to search for the defendant.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>defendant_dob_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest date of birth value to search for the defendant.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>defendant_street_number</td>
+<td>optional</td>
+<td>string</td>
+<td>The street number of the house of building of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_street_name</td>
+<td>optional</td>
+<td>string</td>
+<td>The street name of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_street_address</td>
+<td>optional</td>
+<td>string</td>
+<td>The street address of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_street_city</td>
+<td>optional</td>
+<td>string</td>
+<td>The city of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_state</td>
+<td>optional</td>
+<td>string</td>
+<td>The state of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_zip_code</td>
+<td>optional</td>
+<td>string</td>
+<td>The zip code of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>attorney_spn</td>
+<td>optional</td>
+<td>string</td>
+<td>The system person number for the attorney</td>
+<td>Example: <code>2533743</code></td>
+</tr>
+<tr>
+<td>attorney_connection</td>
+<td>optional</td>
+<td>string</td>
+<td>The attorney&#39;s association with the case</td>
+<td>URL encoded text. Examples: <code>hired%20defense</code> <code>appointed</code></td>
+</tr>
+<tr>
+<td>disposition_date_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the date of case disposition</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>disposition_date_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the date of case disposition</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>disposition</td>
+<td>optional</td>
+<td>string</td>
+<td>The type of case disposition</td>
+<td>URL encoded text. Examples: <code>dismissed</code> <code>conviction</code> <code>deferred</code></td>
+</tr>
+<tr>
+<td>sentence</td>
+<td>optional</td>
+<td>string</td>
+<td>The defendants sentence</td>
+<td>URL encoded text. Examples: <code>10%20days</code> <code>adjudication</code> <code>termination</code></td>
+</tr>
+<tr>
+<td>complainant_name</td>
+<td>optional</td>
+<td>string</td>
+<td>The name of the complainant</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>complainant_agency</td>
+<td>optional</td>
+<td>string</td>
+<td>The agency the complainant belongs to.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>offense_report_number</td>
+<td>optional</td>
+<td>string</td>
+<td>The offense report number</td>
+<td>URL encoded text. Examples <code>HC170081858</code>, <code>1704030</code></td>
+</tr>
+<tr>
+<td>fields</td>
+<td>optional</td>
+<td>string</td>
+<td>A comma separated list of fields the return in the results</td>
+<td><code>rundate</code> <code>filing_date</code> <code>instrument_type</code> <code>case_disposition</code> <code>court_division_indicator</code> <code>case_status</code> <code>defendant_status</code> <code>bond_amount</code> <code>current_offense</code> <code>next_appearance_date</code> <code>docket_calendar_name</code> <code>calendar_reason</code> <code>current_offense_level_degree</code> <code>defendant_spn</code> <code>defendant_sex</code> <code>defendant_race</code> <code>defendant_dob</code> <code>defendant_street_number</code> <code>defendant_street_name</code> <code>defendant_street_address</code> <code>defendant_city</code> <code>defendant_state</code> <code>defendant_zip_code</code> <code>attorney_spn</code> <code>attorney_connection</code> <code>disposition_date</code> <code>disposition</code> <code>sentence</code> <code>complainant_name</code> <code>complainant_agency</code> <code>offense_report_number</code></td>
+</tr>
+<tr>
+<td>batch_size</td>
+<td>optional</td>
+<td>int</td>
+<td>The size of each batch of results returned <code>default: 10000</code></td>
+<td>Any integer greater than <code>0</code></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>optional</td>
+<td>int</td>
+<td>The total number of results returned <code>default: 1000000</code></td>
+<td>Any integer greater than <code>0</code></td>
+</tr>
+<tr>
+<td>query</td>
+<td>optional</td>
+<td>string</td>
+<td>A string use to request cached results or the next batch for a paginated query</td>
+<td>A valid query identifier. Found in the json results <code>data.metadata.query</code> or <code>data.metadata.next</code></td>
+</tr>
+</tbody></table>
+<h1 id='filings'>Filings</h1>
+<p>Criminal case filings filed in county or district courts. Use the Filings API calls to request filing information.</p>
+<h2 id='get-filings'>Get Filings</h2>
+<blockquote>
+<p>Example Request:</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Content-Type:application/json"</span> -X GET <span class="s2">"http://tubmanproject-api.mintyross.com/v1/filings?rundate_min=2018-01-02&amp;rundate_max=2018-01-23&amp;defendant_race=black&amp;current_offense_level_degree=felony"</span>
+</code></pre>
+<blockquote>
+<p>Example Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Query successful"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"batch_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/v1/filings?query=L3YxL2ZpbGluZ3M_cnVuZGF0ZV9taW49MjAxOC0wMS0wMiZydW5kYXRlX21heD0yMDE4LTAxLTIzJmRlZmVuZGFudF9yYWNlPWJsYWNrJmN1cnJlbnRfb2ZmZW5zZV9sZXZlbF9kZWdyZWU9ZmVsb255_1"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/v1/filings?query=L3YxL2ZpbGluZ3M_cnVuZGF0ZV9taW49MjAxOC0wMS0wMiZydW5kYXRlX21heD0yMDE4LTAxLTIzJmRlZmVuZGFudF9yYWNlPWJsYWNrJmN1cnJlbnRfb2ZmZW5zZV9sZXZlbF9kZWdyZWU9ZmVsb255_1"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"L3YxL2ZpbGluZ3M_cnVuZGF0ZV9taW49MjAxOC0wMS0wMiZydW5kYXRlX21heD0yMDE4LTAxLTIzJmRlZmVuZGFudF9yYWNlPWJsYWNrJmN1cnJlbnRfb2ZmZW5zZV9sZXZlbF9kZWdyZWU9ZmVsb255_1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"query"</span><span class="p">:</span><span class="w"> </span><span class="s2">"L3YxL2ZpbGluZ3M_cnVuZGF0ZV9taW49MjAxOC0wMS0wMiZydW5kYXRlX21heD0yMDE4LTAxLTIzJmRlZmVuZGFudF9yYWNlPWJsYWNrJmN1cnJlbnRfb2ZmZW5zZV9sZXZlbF9kZWdyZWU9ZmVsb255_1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">89</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"attorney"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"connection"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TX"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Y"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"spn"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"bond_amount"</span><span class="p">:</span><span class="w"> </span><span class="mi">888888</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"calendar_reason"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PACA"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"PRELIMINARY ASSIGNED COURT APPEARANCE"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"case_disposition"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"case_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"157578101010"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"case_status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HAS OPEN SETTINGS"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"court"</span><span class="p">:</span><span class="w"> </span><span class="s2">"232"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"court_division_indicator"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"003"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"felony"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"current_offense"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"559906"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"POSS CS PG 1 4G - 200G"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"level_degree"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"F2"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FELONY SECOND DEGREE"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"defendant"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"address"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"city"</span><span class="p">:</span><span class="w"> </span><span class="s2">"HOUSTON"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"state"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TX"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street_address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2907 TIDEWATER"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"TIDEWATER"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"street_number"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2907"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"zip_code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"77045"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"birthplace"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"date_of_birth"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1993-05-28T05:00:00Z"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MCCARTY, PATRICK WAYNE"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"race"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+            </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"B"</span><span class="p">,</span><span class="w">
+            </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BLACK"</span><span class="w">
+          </span><span class="p">},</span><span class="w">
+          </span><span class="s2">"sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"M"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"spn"</span><span class="p">:</span><span class="w"> </span><span class="s2">"02531246"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"defendant_status"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"J"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEFENDANT WAS PLACED IN A HARRIS COUNTY JAIL"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"docket_calendar_name"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"AC"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"ASSIGNED COURT"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"filing_date"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-03T06:00:00Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"instrument_type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"COM"</span><span class="p">,</span><span class="w">
+          </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"COMPLAINT"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"next_appearance_date"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-05T06:00:00Z"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"rundate"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"$date"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2018-01-04T06:00:00Z"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves criminal case filings.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/filings</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<p>Filter query results by setting query parameters.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+<th>Valid Values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>rundate_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the report run date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>rundate_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest value to search for the report run date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>filing_date_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the filing date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>filing_date_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest value to search for the filing date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>instrument_type</td>
+<td>optional</td>
+<td>string</td>
+<td>Initial charging document, motions to revoke, motions for new trial granted, and appeal documents</td>
+<td>URL encoded text. Example: <code>motion%20new%20trial%20denied</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/instrument_type</code></td>
+</tr>
+<tr>
+<td>case_disposition</td>
+<td>optional</td>
+<td>string</td>
+<td>Final disposition of the case.</td>
+<td>URL encoded text. Example: <code>not%20guilty</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/case_disposition</code></td>
+</tr>
+<tr>
+<td>court_division_indicator</td>
+<td>optional</td>
+<td>string</td>
+<td>Type of case or court</td>
+<td><code>felony</code> <code>misdemeanor</code></td>
+</tr>
+<tr>
+<td>case_status</td>
+<td>optional</td>
+<td>string</td>
+<td>Case status</td>
+<td>URL encoded text. Example: <code>dismissed</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/case_status</code></td>
+</tr>
+<tr>
+<td>defendant_status</td>
+<td>optional</td>
+<td>string</td>
+<td>Defendant status</td>
+<td>URL encoded text. Example: <code>probation</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/defendant_status</code></td>
+</tr>
+<tr>
+<td>bond_amount_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The minimum bond amount in US dollars.</td>
+<td>Examples: <code>500</code> <code>1000</code></td>
+</tr>
+<tr>
+<td>bond_amount_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The maximum bond amount in US dollars.</td>
+<td>Examples : <code>500</code> <code>1000</code></td>
+</tr>
+<tr>
+<td>current_offense</td>
+<td>optional</td>
+<td>string</td>
+<td>The specific offense.</td>
+<td>URL encoded text. Examples: <code>assault</code> <code>poss%20marijuana</code> <code>burglary</code></td>
+</tr>
+<tr>
+<td>next_appearance_date_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest value to search for the next appearance date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>next_appearance_date_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest value to search for the next appearance date.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>docket_calendar_name</td>
+<td>optional</td>
+<td>string</td>
+<td>The calendar/queue which cases sit until ready for trial.</td>
+<td>URL encoded text. Examples: <code>plea</code> <code>probable%20cause</code> <code>jury%20trial</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/docket_calendar_name</code></td>
+</tr>
+<tr>
+<td>calendar_reason</td>
+<td>optional</td>
+<td>string</td>
+<td>The reason for case setting.</td>
+<td>URL encoded text. Examples: <code>motion%20hearing</code> <code>amended</code> <code>jury%20trial</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/calendar_reason</code></td>
+</tr>
+<tr>
+<td>current_offense_level_degree</td>
+<td>optional</td>
+<td>string</td>
+<td>The level and degree of the current offense</td>
+<td>URL encoded text. Examples: <code>felony</code> <code>misdemeanor</code> <code>class%20a</code>. For a list of valid strings query the following endpoint: <code>GET /v1/fields/current_offense_level_degree</code></td>
+</tr>
+<tr>
+<td>defendant_spn</td>
+<td>optional</td>
+<td>string</td>
+<td>The system person number for the defendant</td>
+<td>Example: <code>2322561</code></td>
+</tr>
+<tr>
+<td>defendant_sex</td>
+<td>optional</td>
+<td>string</td>
+<td>The defendant&#39;s sex</td>
+<td><code>M</code> <code>F</code></td>
+</tr>
+<tr>
+<td>defendant_race</td>
+<td>optional</td>
+<td>string</td>
+<td>The defendant&#39;s race</td>
+<td><code>asian</code> <code>pacific%20islander</code> <code>black</code> <code>native%20american</code> <code>multiracial</code> <code>unknown</code> <code>white</code>.  For a list of valid strings query the following endpoint: <code>GET /v1/fields/defendant_race</code></td>
+</tr>
+<tr>
+<td>defendant_dob_min</td>
+<td>optional</td>
+<td>string</td>
+<td>The earliest date of birth value to search for the defendant.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>defendant_dob_max</td>
+<td>optional</td>
+<td>string</td>
+<td>The latest date of birth value to search for the defendant.</td>
+<td>Date string in the format <code>YYYY-MM-DD</code></td>
+</tr>
+<tr>
+<td>defendant_street_number</td>
+<td>optional</td>
+<td>string</td>
+<td>The street number of the house of building of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_street_name</td>
+<td>optional</td>
+<td>string</td>
+<td>The street name of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_street_address</td>
+<td>optional</td>
+<td>string</td>
+<td>The street address of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_street_city</td>
+<td>optional</td>
+<td>string</td>
+<td>The city of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_state</td>
+<td>optional</td>
+<td>string</td>
+<td>The state of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_zip_code</td>
+<td>optional</td>
+<td>string</td>
+<td>The zip code of the defendants recorded address.</td>
+<td>URL encoded text.</td>
+</tr>
+<tr>
+<td>defendant_birthplace</td>
+<td>optional</td>
+<td>string</td>
+<td>The birthplace of the defendant.</td>
+<td>URL encoded text. For a list of valid strings query the following endpoint: <code>GET /v1/fields/defendant_birthplace</code></td>
+</tr>
+<tr>
+<td>defendant_uscitizen</td>
+<td>optional</td>
+<td>string</td>
+<td>US citizenship filter for defendants.</td>
+<td>URL encoded text. <code>Y</code> <code>N</code></td>
+</tr>
+<tr>
+<td>attorney_spn</td>
+<td>optional</td>
+<td>string</td>
+<td>The system person number for the attorney</td>
+<td>Example: <code>2533743</code></td>
+</tr>
+<tr>
+<td>attorney_connection</td>
+<td>optional</td>
+<td>string</td>
+<td>The attorney&#39;s association with the case</td>
+<td>URL encoded text. Examples: <code>hired%20defense</code> <code>appointed</code></td>
+</tr>
+<tr>
+<td>fields</td>
+<td>optional</td>
+<td>string</td>
+<td>A comma separated list of fields the return in the results</td>
+<td><code>rundate</code> <code>filing_date</code> <code>instrument_type</code> <code>case_disposition</code> <code>court_division_indicator</code> <code>case_status</code> <code>defendant_status</code> <code>bond_amount</code> <code>current_offense</code> <code>next_appearance_date</code> <code>docket_calendar_name</code> <code>calendar_reason</code> <code>current_offense_level_degree</code> <code>defendant_spn</code> <code>defendant_sex</code> <code>defendant_race</code> <code>defendant_dob</code> <code>defendant_street_number</code> <code>defendant_street_name</code> <code>defendant_street_address</code> <code>defendant_city</code> <code>defendant_state</code> <code>defendant_zip_code</code> <code>defendant_birthplace</code> <code>defendant_uscitizen</code> <code>attorney_spn</code> <code>attorney_connection</code></td>
+</tr>
+<tr>
+<td>batch_size</td>
+<td>optional</td>
+<td>int</td>
+<td>The size of each batch of results returned <code>default: 10000</code></td>
+<td>Any integer greater than <code>0</code></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>optional</td>
+<td>int</td>
+<td>The total number of results returned <code>default: 1000000</code></td>
+<td>Any integer greater than <code>0</code></td>
+</tr>
+<tr>
+<td>query</td>
+<td>optional</td>
+<td>string</td>
+<td>A string use to request cached results or the next batch for a paginated query</td>
+<td>A valid query identifier. Found in the json results <code>data.metadata.query</code> or <code>data.metadata.next</code></td>
+</tr>
+</tbody></table>
+<h1 id='fields'>Fields</h1>
+<p>List the values for fields related to filings and dispositions.</p>
+<h2 id='get-fields'>Get Fields</h2>
+<blockquote>
+<p>Example Request:</p>
+</blockquote>
+<pre class="highlight shell tab-shell"><code>curl -H <span class="s2">"Content-Type:application/json"</span> -X GET <span class="s2">"http://tubmanproject-api.mintyross.com/v1/fields/defendant_status"</span>
+</code></pre>
+<blockquote>
+<p>Example Response:</p>
+</blockquote>
+<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="s2">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"message"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Query successful"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"data"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="s2">"metadata"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="s2">"batch_size"</span><span class="p">:</span><span class="w"> </span><span class="mi">10000</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"links"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/v1/fields/defendant_status?query=L3YxL2ZpZWxkcy9kZWZlbmRhbnRfc3RhdHVzPw==_1"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="s2">"self"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+          </span><span class="s2">"href"</span><span class="p">:</span><span class="w"> </span><span class="s2">"/v1/fields/defendant_status?query=L3YxL2ZpZWxkcy9kZWZlbmRhbnRfc3RhdHVzPw==_1"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="s2">"next"</span><span class="p">:</span><span class="w"> </span><span class="s2">"L3YxL2ZpZWxkcy9kZWZlbmRhbnRfc3RhdHVzPw==_1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"query"</span><span class="p">:</span><span class="w"> </span><span class="s2">"L3YxL2ZpZWxkcy9kZWZlbmRhbnRfc3RhdHVzPw==_1"</span><span class="p">,</span><span class="w">
+      </span><span class="s2">"total"</span><span class="p">:</span><span class="w"> </span><span class="mi">26</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"results"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"A"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"DEFERRED ADJUDICATION OF GUILT"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"B"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"BOND MADE"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="p">{</span><span class="w">
+        </span><span class="s2">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"C"</span><span class="p">,</span><span class="w">
+        </span><span class="s2">"definition"</span><span class="p">:</span><span class="w"> </span><span class="s2">"CITY JAIL  (FOR HOUSTON JAIL ONLY)"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre>
+<p>This endpoint retrieves defendant birthplace fields.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /v1/fields/{field}</code></p>
+<h3 id='path-parameters'>Path Parameters</h3>
+<p>Get valid values for criminal disposition and filing fields.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+<th>Valid Values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>{field}</td>
+<td>required</td>
+<td>string</td>
+<td>Name of a searchable criminal disposition or filing field</td>
+<td><code>court_division_indicator</code> <code>instrument_type</code> <code>case_disposition</code> <code>case_status</code> <code>defendant_status</code> <code>current_offense_level_degree</code> <code>docket_calendar_name</code> <code>calendar_reason</code> <code>defendant_race</code> <code>defendant_birthplace</code> <code>defendant_birthplace</code></td>
+</tr>
+</tbody></table>
+<h3 id='query-parameters'>Query Parameters</h3>
+<p>Filter query results by setting query parameters.</p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Type</th>
+<th>Description</th>
+<th>Valid Values</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>batch_size</td>
+<td>optional</td>
+<td>int</td>
+<td>The size of each batch of results returned <code>default: 10000</code></td>
+<td>Any integer greater than <code>0</code></td>
+</tr>
+<tr>
+<td>limit</td>
+<td>optional</td>
+<td>int</td>
+<td>The total number of results returned <code>default: 1000000</code></td>
+<td>Any integer greater than <code>0</code></td>
+</tr>
+<tr>
+<td>query</td>
+<td>optional</td>
+<td>string</td>
+<td>A string use to request cached results or the next batch for a paginated query</td>
+<td>A valid query identifier. Found in the json results <code>data.metadata.query</code> or <code>data.metadata.next</code></td>
+</tr>
+</tbody></table>
+<h1 id='errors'>Errors</h1>
+<p>The Tubman Project API uses the following error codes:</p>
+
+<table><thead>
+<tr>
+<th>Error Code</th>
+<th>Meaning</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>400</td>
+<td>Bad Request -- Application cannot handle your request.</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Unauthorized -- The user is not authorized to access the requested resource.</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Forbidden -- The user is authenticated but does not have permission to access the requested resource.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- Requested resource does not exist.</td>
+</tr>
+<tr>
+<td>405</td>
+<td>Method Not Allowed -- The application cannot handle the requested method on the resource.</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Not Found -- Requested resource does not exist.</td>
+</tr>
+<tr>
+<td>422</td>
+<td>Internal Server Error -- The request was well-formed but was unable to be followed due to semantic errors.</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Internal Server Error -- An unexpected condition was encountered.</td>
+</tr>
+<tr>
+<td>502</td>
+<td>Bad Gateway -- Internal server error.  The application received an invalid response from the upstream server.</td>
+</tr>
+</tbody></table>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="shell">cURL</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
