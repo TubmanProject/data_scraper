@@ -1,0 +1,266 @@
+[
+    {
+        "code": "ACP",
+        "definition": "ALIAS CAPIAS PROFINE"
+    },
+    {
+        "code": "ACW",
+        "definition": "ALIAS CAPIAS WARRANT"
+    },
+    {
+        "code": "AJW",
+        "definition": "ALIAS ARREST WARRANT"
+    },
+    {
+        "code": "APP",
+        "definition": "ON APPEAL, COURT OF CRIMINAL APPEALS"
+    },
+    {
+        "code": "BAP",
+        "definition": "BOND FORFEITURE APPEAL"
+    },
+    {
+        "code": "BFA",
+        "definition": "BOND FORFEITURE CAPIAS"
+    },
+    {
+        "code": "BFC",
+        "definition": "CASH BOND"
+    },
+    {
+        "code": "BFD",
+        "definition": "PERSONAL BOND"
+    },
+    {
+        "code": "BFP",
+        "definition": "BOND FORFEITURE PERSONAL BOND"
+    },
+    {
+        "code": "BFS",
+        "definition": "SURETY OR PROPERTY BOND"
+    },
+    {
+        "code": "BFT",
+        "definition": "BOND FORFEITURE JUDGMENT"
+    },
+    {
+        "code": "BFW",
+        "definition": "BOND FORFEITURE WARRANT"
+    },
+    {
+        "code": "BOR",
+        "definition": "BILL OF REVIEW GRANTED"
+    },
+    {
+        "code": "BRD",
+        "definition": "BILL OF REVIEW DENIED"
+    },
+    {
+        "code": "BRF",
+        "definition": "BILL OF REVIEW FILED"
+    },
+    {
+        "code": "BWT",
+        "definition": "BENCH WARRANT"
+    },
+    {
+        "code": "CAP",
+        "definition": "CAPIAS CHILD SUPPORT"
+    },
+    {
+        "code": "CIT",
+        "definition": "CITATION ISSUED"
+    },
+    {
+        "code": "CMI",
+        "definition": "COMMITTMENT & CAPIAS PROFINE"
+    },
+    {
+        "code": "COM",
+        "definition": "COMPLAINT"
+    },
+    {
+        "code": "CPF",
+        "definition": "CAPIAS PROFINE WARRANT"
+    },
+    {
+        "code": "CTP",
+        "definition": "CONTEMPT OF COURT"
+    },
+    {
+        "code": "CTR",
+        "definition": "CITATION RETURNED OR ANSWER FILED"
+    },
+    {
+        "code": "CVI",
+        "definition": "CHANGE OF VENUE INDICTMENT IN"
+    },
+    {
+        "code": "DET",
+        "definition": "NOTICE OF DETAINER"
+    },
+    {
+        "code": "DWC",
+        "definition": "DISMISSED WITH COST"
+    },
+    {
+        "code": "EAG",
+        "definition": "EXPUNCTION ACQUITTAL GRANTED"
+    },
+    {
+        "code": "EAR",
+        "definition": "EXPUNCTION ACQUITTAL RECORD"
+    },
+    {
+        "code": "EPG",
+        "definition": "EXPUNGED RECORD"
+    },
+    {
+        "code": "EXA",
+        "definition": "EXPARTE ON APPEAL"
+    },
+    {
+        "code": "EXE",
+        "definition": "EXECUTION ISSUED"
+    },
+    {
+        "code": "EXP",
+        "definition": "EX PARTE PROCEEDINGS"
+    },
+    {
+        "code": "EXR",
+        "definition": "EXECUTION RETURNED"
+    },
+    {
+        "code": "FID",
+        "definition": "FELONY INDICTMENT"
+    },
+    {
+        "code": "FIN",
+        "definition": "FELONY INFORMATION"
+    },
+    {
+        "code": "FUG",
+        "definition": "FUGITIVE"
+    },
+    {
+        "code": "JCW",
+        "definition": "JUSTICE COURT WARRANT"
+    },
+    {
+        "code": "MAJ",
+        "definition": "MOTION TO ADJUDICATE GUILT"
+    },
+    {
+        "code": "MAP",
+        "definition": "MISDEMEANOR APPEAL"
+    },
+    {
+        "code": "MDN",
+        "definition": "MOTION NEW TRIAL DENIED/OVERRULED"
+    },
+    {
+        "code": "MID",
+        "definition": "MISDEMEANOR INDICTMENT"
+    },
+    {
+        "code": "MIN",
+        "definition": "MISDEMEANOR INFORMATION"
+    },
+    {
+        "code": "MND",
+        "definition": "MOTION NEW TRIAL DENIED"
+    },
+    {
+        "code": "MNF",
+        "definition": "MOTION NEW TRIAL FILED"
+    },
+    {
+        "code": "MNT",
+        "definition": "MOTION NEW TRIAL GRANTED"
+    },
+    {
+        "code": "MRC",
+        "definition": "MOTION TO REVOKE CONDITIONAL DISCHARGE"
+    },
+    {
+        "code": "MRP",
+        "definition": "MOTION REVOKE PROBATION"
+    },
+    {
+        "code": "NOB",
+        "definition": "NO BILL"
+    },
+    {
+        "code": "PCW",
+        "definition": "POST CONVICTION WRIT"
+    },
+    {
+        "code": "OPI",
+        "definition": "OOC PRETRIAL INTERVENTION (CSCD)"
+    },
+    {
+        "code": "PIN",
+        "definition": "PRETRIAL INTERVIEW"
+    },
+    {
+        "code": "PTI",
+        "definition": "PTS OOC SUPERVISION"
+    },
+    {
+        "code": "PWA",
+        "definition": "POST CONVICTION WRIT ON APPEAL"
+    },
+    {
+        "code": "RD",
+        "definition": "REVERSED AND DISMISSED"
+    },
+    {
+        "code": "RDL",
+        "definition": "RESTRICTED DRIVERS LICENSE"
+    },
+    {
+        "code": "RID",
+        "definition": "REINDICTMENT"
+    },
+    {
+        "code": "RR",
+        "definition": "REVERSED AND REMANDED"
+    },
+    {
+        "code": "RWC",
+        "definition": "REINSTATED WITH COST"
+    },
+    {
+        "code": "SF",
+        "definition": "SCIRE FACIAS (BOND FORFEITURE) - INITIAL"
+    },
+    {
+        "code": "TJC",
+        "definition": "TRANSFERRED TO JUVENILE COURT"
+    },
+    {
+        "code": "TRF",
+        "definition": "TRF   TRAFFIC WARRANT (PATROL DIV ONLY)"
+    },
+    {
+        "code": "WAR",
+        "definition": "WARRANT"
+    },
+    {
+        "code": "WCW",
+        "definition": "WORTHLESS CHECK WARRANT"
+    },
+    {
+        "code": "WRA",
+        "definition": "WRIT OF HABEAS CORPUS ON APPEAL"
+    },
+    {
+        "code": "WRT",
+        "definition": "WRIT OF HABEAS CORPUS"
+    },
+    {
+        "code": "",
+        "definition": ""
+    }
+]
