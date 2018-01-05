@@ -1,5 +1,8 @@
+"""Run Module."""
+
 # run.py is used to launch the web server locally
 import os
+
 from app import create_app
 from app.config import get_config
 

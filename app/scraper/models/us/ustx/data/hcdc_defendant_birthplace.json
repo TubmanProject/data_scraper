@@ -1,0 +1,1622 @@
+[
+    {
+        "code": "AA",
+        "definition": "ALBANIA"
+    },
+    {
+        "code": "AB",
+        "definition": "ALBERTA"
+    },
+    {
+        "code": "AC",
+        "definition": "AFRICA (REFERENCE ONLY)"
+    },
+    {
+        "code": "AD",
+        "definition": "ANDORRA"
+    },
+    {
+        "code": "AE",
+        "definition": "ANGUILLA"
+    },
+    {
+        "code": "AF",
+        "definition": "AFGHANISTAN"
+    },
+    {
+        "code": "AG",
+        "definition": "AGUASCALIENTES (MEXICAN STATE)"
+    },
+    {
+        "code": "AH",
+        "definition": "TERRITORY OF ASHMORE & CARTIER ISLANDS"
+    },
+    {
+        "code": "AI",
+        "definition": "ANTIGUA & BARBUDA"
+    },
+    {
+        "code": "AJ",
+        "definition": "ARUBA"
+    },
+    {
+        "code": "AK",
+        "definition": "ALASKA"
+    },
+    {
+        "code": "AL",
+        "definition": "ALABAMA"
+    },
+    {
+        "code": "AM",
+        "definition": "AMERICAN SAMOA (ISLANDS)"
+    },
+    {
+        "code": "AN",
+        "definition": "ALGERIA"
+    },
+    {
+        "code": "AO",
+        "definition": "ANGOLA"
+    },
+    {
+        "code": "AP",
+        "definition": "ARMENIA"
+    },
+    {
+        "code": "AQ",
+        "definition": "AZORES ISLAND"
+    },
+    {
+        "code": "AR",
+        "definition": "ARKANSAS"
+    },
+    {
+        "code": "AS",
+        "definition": "AUSTRALIA"
+    },
+    {
+        "code": "AT",
+        "definition": "ARGENTINA   (SOUTH AMERICA)"
+    },
+    {
+        "code": "AU",
+        "definition": "AUSTRIA"
+    },
+    {
+        "code": "AV",
+        "definition": "AZERBAIJAN"
+    },
+    {
+        "code": "AW",
+        "definition": "SAINT KITTS-NEVIS-ANGUILLA"
+    },
+    {
+        "code": "AY",
+        "definition": "ANTARCTICA (REFERENCE ONLY)"
+    },
+    {
+        "code": "AZ",
+        "definition": "ARIZONA"
+    },
+    {
+        "code": "BA",
+        "definition": "BAJA CALIFORNIA NORTHERN SECTION MEXICO"
+    },
+    {
+        "code": "BB",
+        "definition": "BARBADOS"
+    },
+    {
+        "code": "BC",
+        "definition": "BRITISH COLUMBIA"
+    },
+    {
+        "code": "BD",
+        "definition": "BAHAMAS"
+    },
+    {
+        "code": "BE",
+        "definition": "BAHRAIN/BAHREIN"
+    },
+    {
+        "code": "BF",
+        "definition": "BASSAS DA INDIA"
+    },
+    {
+        "code": "BG",
+        "definition": "BELGIUM"
+    },
+    {
+        "code": "BH",
+        "definition": "BELIZE (FORMERLY BRITISH HONDURAS)"
+    },
+    {
+        "code": "BI",
+        "definition": "BURUNDI"
+    },
+    {
+        "code": "BJ",
+        "definition": "BAJA CALIFORNIA SUR SOUTHERN SECTION MEXICO"
+    },
+    {
+        "code": "BK",
+        "definition": "BAKER ISLAND"
+    },
+    {
+        "code": "BL",
+        "definition": "BANGLADESH"
+    },
+    {
+        "code": "BM",
+        "definition": "BERMUDA, DEPENDENT TERRITORY OF"
+    },
+    {
+        "code": "BN",
+        "definition": "BHUTAN"
+    },
+    {
+        "code": "BO",
+        "definition": "BRITISH INDIAN OCEAN TERRITORY"
+    },
+    {
+        "code": "BP",
+        "definition": "BOSNIA AND HERCEGOVENA"
+    },
+    {
+        "code": "BQ",
+        "definition": "BOUVET ISLAND"
+    },
+    {
+        "code": "BR",
+        "definition": "BURMA"
+    },
+    {
+        "code": "BS",
+        "definition": "SOLOMON ISLANDS"
+    },
+    {
+        "code": "BT",
+        "definition": "BOTSWANA"
+    },
+    {
+        "code": "BU",
+        "definition": "BULGARIA"
+    },
+    {
+        "code": "BV",
+        "definition": "BOLIVIA    (SOUTH AMERICA)"
+    },
+    {
+        "code": "BW",
+        "definition": "BALEARIC ISLANDS"
+    },
+    {
+        "code": "BX",
+        "definition": "BRUNEI"
+    },
+    {
+        "code": "BY",
+        "definition": "BYELARUS"
+    },
+    {
+        "code": "BZ",
+        "definition": "BRAZIL  (SOUTH AMERICA)"
+    },
+    {
+        "code": "CA",
+        "definition": "CALIFORNIA"
+    },
+    {
+        "code": "CB",
+        "definition": "COLOMBIA, REPUBLIC OF (SOUTH AMERICA)"
+    },
+    {
+        "code": "CC",
+        "definition": "CUBA, REPUBLIC OF"
+    },
+    {
+        "code": "CD",
+        "definition": "CANADA (USE IF PROVINCE IS UNKNOWN)"
+    },
+    {
+        "code": "CE",
+        "definition": "CAMPECHE (MEXICAN STATE)"
+    },
+    {
+        "code": "CF",
+        "definition": "CHAD"
+    },
+    {
+        "code": "CG",
+        "definition": "CAROLINE ISLANDS"
+    },
+    {
+        "code": "CH",
+        "definition": "CHIHUAHUA (MEXICAN STATE)"
+    },
+    {
+        "code": "CI",
+        "definition": "CHIAPAS (MEXICAN STATE)"
+    },
+    {
+        "code": "CJ",
+        "definition": "CAMBODIA"
+    },
+    {
+        "code": "CK",
+        "definition": "CZECHOSLOVAKIA (FOR REFERENCE ONLY)"
+    },
+    {
+        "code": "CL",
+        "definition": "COLIMA"
+    },
+    {
+        "code": "CM",
+        "definition": "CAMEROON"
+    },
+    {
+        "code": "CN",
+        "definition": "CHINA (FOR REFERENCE ONLY)"
+    },
+    {
+        "code": "CO",
+        "definition": "COLORADO"
+    },
+    {
+        "code": "CP",
+        "definition": "CAYMAN ISLANDS"
+    },
+    {
+        "code": "CQ",
+        "definition": "CHILE, REPUBLIC OF (SOUTH AMERICA)"
+    },
+    {
+        "code": "CR",
+        "definition": "COSTA RICA, REPUBLIC OF"
+    },
+    {
+        "code": "CS",
+        "definition": "CYPRUS, REPUBLIC OF"
+    },
+    {
+        "code": "CT",
+        "definition": "CONNECTICUT"
+    },
+    {
+        "code": "CU",
+        "definition": "COAHUILA  (MEXICAN STATE)"
+    },
+    {
+        "code": "CV",
+        "definition": "CAPE VERDE ISLANDS"
+    },
+    {
+        "code": "CW",
+        "definition": "CENTRAL AFRICAN REPUBLIC"
+    },
+    {
+        "code": "CX",
+        "definition": "CONGO (REFERENCE ONLY)"
+    },
+    {
+        "code": "CY",
+        "definition": "SRI LANKA (FORMERLY CEYLON)"
+    },
+    {
+        "code": "CZ",
+        "definition": "CANAL ZONE"
+    },
+    {
+        "code": "DB",
+        "definition": "CLIPPERTON ISLAND"
+    },
+    {
+        "code": "DC",
+        "definition": "DISTRICT OF COLUMBIA"
+    },
+    {
+        "code": "DD",
+        "definition": "COCOS (KEELING) ISLANDS, TERRITORY OF (AUSTRALIAN)"
+    },
+    {
+        "code": "DE",
+        "definition": "DELAWARE"
+    },
+    {
+        "code": "DF",
+        "definition": "DISTRITO FEDERAL MEXICO, D.F."
+    },
+    {
+        "code": "DG",
+        "definition": "COMOROS,FEDERAL ISLAMIC REPUBLIC OF THE"
+    },
+    {
+        "code": "DH",
+        "definition": "BENIN (FORMERLY DAHOMEY)"
+    },
+    {
+        "code": "DI",
+        "definition": "COOK ISLANDS"
+    },
+    {
+        "code": "DJ",
+        "definition": "CORAL SEA ISLANDS, TERRITORY OF"
+    },
+    {
+        "code": "DK",
+        "definition": "DENMARK"
+    },
+    {
+        "code": "DL",
+        "definition": "DEVILS LAKE SIOUX TRIBE"
+    },
+    {
+        "code": "DM",
+        "definition": "DOMINICA"
+    },
+    {
+        "code": "DN",
+        "definition": "DJIGOUTI, REPUBLIC OF"
+    },
+    {
+        "code": "DO",
+        "definition": "DURANGO   (MEXICAN STATE)"
+    },
+    {
+        "code": "DR",
+        "definition": "DOMINICAN REPUBLIC"
+    },
+    {
+        "code": "DU",
+        "definition": "DUCIE ISLANDS (FOR REFERENCE ONLY)"
+    },
+    {
+        "code": "EE",
+        "definition": "ABSENTEE SHAWNEE"
+    },
+    {
+        "code": "EK",
+        "definition": "EQUATORIAL GUINEA"
+    },
+    {
+        "code": "EL",
+        "definition": "EL SALVADOR (CENTRAL AMERICA)"
+    },
+    {
+        "code": "EM",
+        "definition": "EAST GERMANY (GERMAN DEMOCRATIC REP 1945-1989 REF ONLY)"
+    },
+    {
+        "code": "EN",
+        "definition": "ENGLAND"
+    },
+    {
+        "code": "EO",
+        "definition": "ETHIOPIA"
+    },
+    {
+        "code": "ER",
+        "definition": "EUROPA ISLAND"
+    },
+    {
+        "code": "ES",
+        "definition": "ESTONIA"
+    },
+    {
+        "code": "EU",
+        "definition": "ECUADOR (SOUTH AMERICA)"
+    },
+    {
+        "code": "EY",
+        "definition": "EGYPT (FORMERLY UNITED ARAB REPUBLIC)"
+    },
+    {
+        "code": "EZ",
+        "definition": "CZECH REPUBLIC"
+    },
+    {
+        "code": "FA",
+        "definition": "FALKLAND ISLANDS, COLONY OF THE(ISLAS MALVINAS)"
+    },
+    {
+        "code": "FC",
+        "definition": "FOND DU LAC"
+    },
+    {
+        "code": "FD",
+        "definition": "FINLAND"
+    },
+    {
+        "code": "FG",
+        "definition": "FRENCH GUIANA(DEPARTMENT OF GUIANA)"
+    },
+    {
+        "code": "FJ",
+        "definition": "FIJI"
+    },
+    {
+        "code": "FL",
+        "definition": "FLORIDA"
+    },
+    {
+        "code": "FN",
+        "definition": "FRANCE"
+    },
+    {
+        "code": "FO",
+        "definition": "FAROE ISLANDS"
+    },
+    {
+        "code": "FP",
+        "definition": "FRENCH POLYNESIA,TERRITORY OF"
+    },
+    {
+        "code": "FR",
+        "definition": "FRENCH SOUTHERN AND ANTARCTIC LANDS, TERRITORY OF"
+    },
+    {
+        "code": "FS",
+        "definition": "FEDERATED STATES OF MICRONESIA"
+    },
+    {
+        "code": "FX",
+        "definition": "SAC & FOX"
+    },
+    {
+        "code": "GA",
+        "definition": "GEORGIA"
+    },
+    {
+        "code": "GB",
+        "definition": "GABON"
+    },
+    {
+        "code": "GC",
+        "definition": "GREECE"
+    },
+    {
+        "code": "GD",
+        "definition": "GEORGIA (FORMERLY GRUZINSKAY)"
+    },
+    {
+        "code": "GE",
+        "definition": "GERMANY"
+    },
+    {
+        "code": "GF",
+        "definition": "GUERNSEY, BAILIWICK OF"
+    },
+    {
+        "code": "GG",
+        "definition": "GHANA"
+    },
+    {
+        "code": "GI",
+        "definition": "GUINEA"
+    },
+    {
+        "code": "GJ",
+        "definition": "GRENADA"
+    },
+    {
+        "code": "GK",
+        "definition": "GAMBIA, THE"
+    },
+    {
+        "code": "GL",
+        "definition": "ELICE & GILBERT ISLANDS (REFERENCE ONLY)"
+    },
+    {
+        "code": "GM",
+        "definition": "GUAM"
+    },
+    {
+        "code": "GN",
+        "definition": "GREENLAND"
+    },
+    {
+        "code": "GO",
+        "definition": "GLORIOSO ISLANDS"
+    },
+    {
+        "code": "GP",
+        "definition": "GUADELOUPE, DEPARTMENT OF"
+    },
+    {
+        "code": "GR",
+        "definition": "GUERRERO   (MEXICAN STATE)"
+    },
+    {
+        "code": "GS",
+        "definition": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS"
+    },
+    {
+        "code": "GT",
+        "definition": "GUATEMALA   (CENTRAL AMERICA)"
+    },
+    {
+        "code": "GU",
+        "definition": "GUANAJUATO (MEXICAN STATE)"
+    },
+    {
+        "code": "GY",
+        "definition": "GUYANA"
+    },
+    {
+        "code": "GZ",
+        "definition": "GAZA"
+    },
+    {
+        "code": "HA",
+        "definition": "HAWAII BOAT FILE"
+    },
+    {
+        "code": "HC",
+        "definition": "HERCEGOVENA (REFERENCE ONLY)"
+    },
+    {
+        "code": "HD",
+        "definition": "HONDURAS"
+    },
+    {
+        "code": "HE",
+        "definition": "HEARD ISLAND & MCDONALD ISLANDS, TERRORITY OF (AUSTRALIAN)"
+    },
+    {
+        "code": "HI",
+        "definition": "HAWAII"
+    },
+    {
+        "code": "HK",
+        "definition": "HONG KONG"
+    },
+    {
+        "code": "HL",
+        "definition": "HIDALGO    (MEXICAN STATE)"
+    },
+    {
+        "code": "HN",
+        "definition": "VANUATU, REPUBLIC OF (FORMERLY NEW HEBRIDES)"
+    },
+    {
+        "code": "HO",
+        "definition": "HOWLAND ISLAND"
+    },
+    {
+        "code": "HR",
+        "definition": "CHRISTMAS ISLAND, TERRITORY OF"
+    },
+    {
+        "code": "HS",
+        "definition": "SAINT HELENA"
+    },
+    {
+        "code": "HT",
+        "definition": "HAITI"
+    },
+    {
+        "code": "HU",
+        "definition": "HUNGARY"
+    },
+    {
+        "code": "IA",
+        "definition": "IOWA"
+    },
+    {
+        "code": "IB",
+        "definition": "ISLE OF MAN"
+    },
+    {
+        "code": "IC",
+        "definition": "ICELAND"
+    },
+    {
+        "code": "ID",
+        "definition": "IDAHO"
+    },
+    {
+        "code": "IE",
+        "definition": "IRELAND"
+    },
+    {
+        "code": "II",
+        "definition": "INDIA"
+    },
+    {
+        "code": "IL",
+        "definition": "ILLINOIS"
+    },
+    {
+        "code": "IM",
+        "definition": "MADEIRA ISLANDS"
+    },
+    {
+        "code": "IN",
+        "definition": "INDIANA"
+    },
+    {
+        "code": "IO",
+        "definition": "INDONESIA INCLUDES PORTUGESE TIMOR"
+    },
+    {
+        "code": "IQ",
+        "definition": "IRAQ"
+    },
+    {
+        "code": "IR",
+        "definition": "IRAN"
+    },
+    {
+        "code": "IS",
+        "definition": "ISRAEL"
+    },
+    {
+        "code": "IT",
+        "definition": "ITALY INCLUDES SICILY & SARDINIA"
+    },
+    {
+        "code": "IU",
+        "definition": "NIUE"
+    },
+    {
+        "code": "IX",
+        "definition": "MENOMINEE INDIAN"
+    },
+    {
+        "code": "IY",
+        "definition": "COTE D'IVOIRE, REPUBLIC OF (IVORY COAST)"
+    },
+    {
+        "code": "JA",
+        "definition": "JAPAN"
+    },
+    {
+        "code": "JE",
+        "definition": "JERSEY, BAILIWICK OF"
+    },
+    {
+        "code": "JI",
+        "definition": "JOHNSTON ATOLL"
+    },
+    {
+        "code": "JL",
+        "definition": "JALISCO    (MEXICAN STATE)"
+    },
+    {
+        "code": "JM",
+        "definition": "JAMAICA"
+    },
+    {
+        "code": "JN",
+        "definition": "JAN MAYEN"
+    },
+    {
+        "code": "JO",
+        "definition": "JORDAN"
+    },
+    {
+        "code": "JR",
+        "definition": "JARVIS ISLAND"
+    },
+    {
+        "code": "JU",
+        "definition": "JUAN DE NOVA ISLAND"
+    },
+    {
+        "code": "KA",
+        "definition": "KANSAS BOAT FILE"
+    },
+    {
+        "code": "KB",
+        "definition": "KIRIBATI"
+    },
+    {
+        "code": "KC",
+        "definition": "CROATIA"
+    },
+    {
+        "code": "KE",
+        "definition": "KENYA"
+    },
+    {
+        "code": "KH",
+        "definition": "MANAHIKI ISLAND"
+    },
+    {
+        "code": "KI",
+        "definition": "KINGMAN REEF"
+    },
+    {
+        "code": "KN",
+        "definition": "NORTH KOREA"
+    },
+    {
+        "code": "KO",
+        "definition": "SOUTH KOREA"
+    },
+    {
+        "code": "KP",
+        "definition": "SHAKOPEE"
+    },
+    {
+        "code": "KR",
+        "definition": "KOREA (REFERENCE ONLY)"
+    },
+    {
+        "code": "KS",
+        "definition": "KANSAS"
+    },
+    {
+        "code": "KT",
+        "definition": "KAZAKHSTAN"
+    },
+    {
+        "code": "KU",
+        "definition": "KUWAIT"
+    },
+    {
+        "code": "KW",
+        "definition": "KIOWA"
+    },
+    {
+        "code": "KY",
+        "definition": "KENTUCKY"
+    },
+    {
+        "code": "KZ",
+        "definition": "KYRGYZSTAN"
+    },
+    {
+        "code": "LA",
+        "definition": "LOUISIANA"
+    },
+    {
+        "code": "LB",
+        "definition": "LIBERIA"
+    },
+    {
+        "code": "LC",
+        "definition": "MILLE LACS"
+    },
+    {
+        "code": "LD",
+        "definition": "MOLDOVA"
+    },
+    {
+        "code": "LE",
+        "definition": "LESOTHO"
+    },
+    {
+        "code": "LF",
+        "definition": "SLOVAKIA"
+    },
+    {
+        "code": "LH",
+        "definition": "LITHUANIA"
+    },
+    {
+        "code": "LI",
+        "definition": "LIECHTENSTEIN"
+    },
+    {
+        "code": "LN",
+        "definition": "LEBANON"
+    },
+    {
+        "code": "LO",
+        "definition": "SLOVENIA"
+    },
+    {
+        "code": "LS",
+        "definition": "LAOS"
+    },
+    {
+        "code": "LT",
+        "definition": "LATVIA (REFERENCE ONLY)"
+    },
+    {
+        "code": "LU",
+        "definition": "SAINT LUCIA"
+    },
+    {
+        "code": "LX",
+        "definition": "LUXEMBOURG"
+    },
+    {
+        "code": "LY",
+        "definition": "LIBYA"
+    },
+    {
+        "code": "MA",
+        "definition": "MASSACHUETTS"
+    },
+    {
+        "code": "MB",
+        "definition": "MANITOBA"
+    },
+    {
+        "code": "MC",
+        "definition": "MICHOACAN  (MEXICAN STATE)"
+    },
+    {
+        "code": "MD",
+        "definition": "MARYLAND"
+    },
+    {
+        "code": "ME",
+        "definition": "MAINE"
+    },
+    {
+        "code": "MF",
+        "definition": "MALAWI"
+    },
+    {
+        "code": "MG",
+        "definition": "MONGOLIA"
+    },
+    {
+        "code": "MH",
+        "definition": "MARSHALL ISLANDS"
+    },
+    {
+        "code": "MI",
+        "definition": "MICHIGAN"
+    },
+    {
+        "code": "MJ",
+        "definition": "MONACO"
+    },
+    {
+        "code": "MK",
+        "definition": "NORTHERN MARIANA ISLANDS"
+    },
+    {
+        "code": "ML",
+        "definition": "MALI"
+    },
+    {
+        "code": "MM",
+        "definition": "MEXICO (COUNTRY)"
+    },
+    {
+        "code": "MN",
+        "definition": "MINNESOTA"
+    },
+    {
+        "code": "MO",
+        "definition": "MISSOURI"
+    },
+    {
+        "code": "MP",
+        "definition": "MALAGASY REPUBLIC"
+    },
+    {
+        "code": "MQ",
+        "definition": "MOROCCO"
+    },
+    {
+        "code": "MR",
+        "definition": "MORELOS    (MEXICAN STATE)"
+    },
+    {
+        "code": "MS",
+        "definition": "MISSISSIPPI"
+    },
+    {
+        "code": "MT",
+        "definition": "MONTANA"
+    },
+    {
+        "code": "MU",
+        "definition": "MAURITANIA"
+    },
+    {
+        "code": "MV",
+        "definition": "MALDIVES"
+    },
+    {
+        "code": "MW",
+        "definition": "MIDWAY ISLANDS"
+    },
+    {
+        "code": "MX",
+        "definition": "MEXICO (STATE)"
+    },
+    {
+        "code": "MY",
+        "definition": "MALTA"
+    },
+    {
+        "code": "MZ",
+        "definition": "MALAYSIA"
+    },
+    {
+        "code": "NA",
+        "definition": "NAYARIT    (MEXICAN STATE)"
+    },
+    {
+        "code": "NB",
+        "definition": "NEBRASKA"
+    },
+    {
+        "code": "NC",
+        "definition": "NORTH CAROLINA"
+    },
+    {
+        "code": "ND",
+        "definition": "NORTH DAKOTA"
+    },
+    {
+        "code": "NE",
+        "definition": "HOLLAND (NETHERLANDS)"
+    },
+    {
+        "code": "NF",
+        "definition": "NEWFOUNDLAND (INCLUDES LABRADOR)"
+    },
+    {
+        "code": "NG",
+        "definition": "NIGERIA   (AFRICA)"
+    },
+    {
+        "code": "NH",
+        "definition": "NEW HAMPSHIRE"
+    },
+    {
+        "code": "NI",
+        "definition": "NORTHERN IRELAND"
+    },
+    {
+        "code": "NJ",
+        "definition": "NEW JERSEY"
+    },
+    {
+        "code": "NK",
+        "definition": "NEW BRUNSWICK"
+    },
+    {
+        "code": "NL",
+        "definition": "NUEVO LEON (MEXICAN STATE)"
+    },
+    {
+        "code": "NM",
+        "definition": "NEW MEXICO"
+    },
+    {
+        "code": "NN",
+        "definition": "NIGER"
+    },
+    {
+        "code": "NO",
+        "definition": "PAPUA NEW GUINEA (FORMERLY NEW GUINEA)"
+    },
+    {
+        "code": "NP",
+        "definition": "NEPAL"
+    },
+    {
+        "code": "NQ",
+        "definition": "NEW CALEDONIA"
+    },
+    {
+        "code": "NR",
+        "definition": "NAURU"
+    },
+    {
+        "code": "NS",
+        "definition": "NOVA SCOTIA"
+    },
+    {
+        "code": "NT",
+        "definition": "NORTHWEST TERRITORIES"
+    },
+    {
+        "code": "NU",
+        "definition": "NICARAGUA"
+    },
+    {
+        "code": "NV",
+        "definition": "NEVADA"
+    },
+    {
+        "code": "NW",
+        "definition": "NORWAY"
+    },
+    {
+        "code": "NX",
+        "definition": "CURACAO (NETHERLANDS ANTILLES)"
+    },
+    {
+        "code": "NY",
+        "definition": "NEW YORK"
+    },
+    {
+        "code": "NZ",
+        "definition": "NEW ZEALAND"
+    },
+    {
+        "code": "OA",
+        "definition": "OAXACA     (MEXICAN STATE)"
+    },
+    {
+        "code": "OC",
+        "definition": "MACAU (MACAO)"
+    },
+    {
+        "code": "OF",
+        "definition": "NORFOLK ISLAND, TERRITORY OF (AUSTRALIAN)"
+    },
+    {
+        "code": "OH",
+        "definition": "OHIO"
+    },
+    {
+        "code": "OI",
+        "definition": "OKINAWA"
+    },
+    {
+        "code": "OK",
+        "definition": "OKLAHOMA"
+    },
+    {
+        "code": "OM",
+        "definition": "OMAN"
+    },
+    {
+        "code": "ON",
+        "definition": "ONTARIO"
+    },
+    {
+        "code": "OR",
+        "definition": "OREGON"
+    },
+    {
+        "code": "OS",
+        "definition": "OGLALA SIOUX"
+    },
+    {
+        "code": "PA",
+        "definition": "PENNSYLVANIA"
+    },
+    {
+        "code": "PB",
+        "definition": "PUEBLA     (MEXICAN STATE)"
+    },
+    {
+        "code": "PC",
+        "definition": "PITCAIRN, HENDERSON, DUCIE, & OENO ISLANDS"
+    },
+    {
+        "code": "PD",
+        "definition": "REPUBLIC OF PALAU"
+    },
+    {
+        "code": "PE",
+        "definition": "PRINCE EDWARD ISLAND"
+    },
+    {
+        "code": "PF",
+        "definition": "PARCEL ISLANDS"
+    },
+    {
+        "code": "PG",
+        "definition": "GUINEA-BISSAU (FORMERLY PORTUGESE GUINEA)"
+    },
+    {
+        "code": "PI",
+        "definition": "PHILIPPINES"
+    },
+    {
+        "code": "PK",
+        "definition": "PAKISTAN"
+    },
+    {
+        "code": "PL",
+        "definition": "PALMYRA ATOLL"
+    },
+    {
+        "code": "PM",
+        "definition": "PANAMA"
+    },
+    {
+        "code": "PO",
+        "definition": "POLAND"
+    },
+    {
+        "code": "PQ",
+        "definition": "QUEBEC"
+    },
+    {
+        "code": "PR",
+        "definition": "PUERTO RICO"
+    },
+    {
+        "code": "PS",
+        "definition": "SAINT PIERRE & MIQUELON, TERRITORIAL COLLECTIVITY OF"
+    },
+    {
+        "code": "PT",
+        "definition": "PORTUGAL"
+    },
+    {
+        "code": "PU",
+        "definition": "PERU   (SOUTH AMERICA)"
+    },
+    {
+        "code": "PV",
+        "definition": "PARAGUAY   (SOUTH AMERICA)"
+    },
+    {
+        "code": "QA",
+        "definition": "QATAR"
+    },
+    {
+        "code": "QR",
+        "definition": "QUINTANA ROO  (MEXICAN STATE)"
+    },
+    {
+        "code": "QU",
+        "definition": "QUERETARO  (MEXICAN STATE)"
+    },
+    {
+        "code": "RA",
+        "definition": "RUSSIA"
+    },
+    {
+        "code": "RB",
+        "definition": "REPUBLIC OF CONGO, BRAZZAVILLE"
+    },
+    {
+        "code": "RE",
+        "definition": "REUNION, DEPARTMENT OF"
+    },
+    {
+        "code": "RF",
+        "definition": "RUSSIAN FEDERATION"
+    },
+    {
+        "code": "RG",
+        "definition": "GIBRALTAR (DEPENDENT TERRITORY OF UNITED KINGDOM)"
+    },
+    {
+        "code": "RH",
+        "definition": "ZIMBABWE (FORMERLY RHODESIA)"
+    },
+    {
+        "code": "RI",
+        "definition": "RHODE ISLAND"
+    },
+    {
+        "code": "RL",
+        "definition": "RED LAKE INDIAN"
+    },
+    {
+        "code": "RR",
+        "definition": "MONTSERRAT"
+    },
+    {
+        "code": "RS",
+        "definition": "WESTERN SAHARA (FORMERLY SPANISH SAHARA)"
+    },
+    {
+        "code": "RU",
+        "definition": "ROMANIA/RUMANIA"
+    },
+    {
+        "code": "RV",
+        "definition": "SOCIALIST REPUBLIC OF VIETNAM"
+    },
+    {
+        "code": "RW",
+        "definition": "RWANDA"
+    },
+    {
+        "code": "RY",
+        "definition": "REPUBLIC OF YEMEN"
+    },
+    {
+        "code": "SA",
+        "definition": "SIERRA LEONE"
+    },
+    {
+        "code": "SB",
+        "definition": "SAUDIA ARABIA"
+    },
+    {
+        "code": "SC",
+        "definition": "SOUTH CAROLINA"
+    },
+    {
+        "code": "SD",
+        "definition": "SOUTH DAKOTA"
+    },
+    {
+        "code": "SE",
+        "definition": "SEYCHELLES"
+    },
+    {
+        "code": "SF",
+        "definition": "SOUTH AFRICA"
+    },
+    {
+        "code": "SG",
+        "definition": "SENEGAL"
+    },
+    {
+        "code": "SH",
+        "definition": "SAN MARINO"
+    },
+    {
+        "code": "SI",
+        "definition": "SINALOA   (MEXICAN STATE)"
+    },
+    {
+        "code": "SJ",
+        "definition": "SOUTH-WEST AFRICA (NAMIBIA)"
+    },
+    {
+        "code": "SK",
+        "definition": "SIKKIM (NOW INDIA-REFERENCE ONLY)"
+    },
+    {
+        "code": "SL",
+        "definition": "SAN LUIS POTOSI  (MEXICAN STATE)"
+    },
+    {
+        "code": "SM",
+        "definition": "SOMALIA"
+    },
+    {
+        "code": "SN",
+        "definition": "SASKATCHEWAN"
+    },
+    {
+        "code": "SO",
+        "definition": "SONORA    (MEXICAN STATE)"
+    },
+    {
+        "code": "SP",
+        "definition": "SPAIN"
+    },
+    {
+        "code": "SQ",
+        "definition": "SWEDEN"
+    },
+    {
+        "code": "SR",
+        "definition": "SINGAPORE"
+    },
+    {
+        "code": "SS",
+        "definition": "SCOTLAND"
+    },
+    {
+        "code": "ST",
+        "definition": "PEOPLES DEMOCRATIC REPUBLIC OF YEMEN (REFERENCE ONLY)"
+    },
+    {
+        "code": "SU",
+        "definition": "SUDAN"
+    },
+    {
+        "code": "SV",
+        "definition": "SVALBARD"
+    },
+    {
+        "code": "SW",
+        "definition": "SWAZILAND"
+    },
+    {
+        "code": "SX",
+        "definition": "SOVIET UNION"
+    },
+    {
+        "code": "SY",
+        "definition": "SYRIA"
+    },
+    {
+        "code": "SZ",
+        "definition": "SWITZERLAND"
+    },
+    {
+        "code": "TA",
+        "definition": "TAMAULIPAS  (MEXICAN STATE)"
+    },
+    {
+        "code": "TB",
+        "definition": "TABASCO   (MEXICAN STATE)"
+    },
+    {
+        "code": "TC",
+        "definition": "UNITED ARAB EMIRATES"
+    },
+    {
+        "code": "TD",
+        "definition": "TRUST TERRITORY OF THE PACIFIC ISLANDS"
+    },
+    {
+        "code": "TE",
+        "definition": "SPRATLY ISLANDS"
+    },
+    {
+        "code": "TF",
+        "definition": "TUAMOTU ARCHIPELAGO"
+    },
+    {
+        "code": "TG",
+        "definition": "TONGA"
+    },
+    {
+        "code": "TH",
+        "definition": "THAILAND"
+    },
+    {
+        "code": "TI",
+        "definition": "PORTUGESE TIMOR (REFERENCE ONLY)"
+    },
+    {
+        "code": "TJ",
+        "definition": "TAJIKISTAN"
+    },
+    {
+        "code": "TK",
+        "definition": "TOKELAU"
+    },
+    {
+        "code": "TL",
+        "definition": "TLAXCALA    (MEXICAN STATE)"
+    },
+    {
+        "code": "TM",
+        "definition": "TROMELIN ISLAND"
+    },
+    {
+        "code": "TN",
+        "definition": "TENNESSEE"
+    },
+    {
+        "code": "TO",
+        "definition": "TOGO"
+    },
+    {
+        "code": "TP",
+        "definition": "SAO TOME & PRINCIPE"
+    },
+    {
+        "code": "TQ",
+        "definition": "TONGAREVA"
+    },
+    {
+        "code": "TR",
+        "definition": "TURKS & CALICOS ISLANDS"
+    },
+    {
+        "code": "TT",
+        "definition": "TRINIDAD & TOBAGO"
+    },
+    {
+        "code": "TU",
+        "definition": "TUNISIA"
+    },
+    {
+        "code": "TV",
+        "definition": "TUVALU (FORMERLY ELLICE ISLANDS)"
+    },
+    {
+        "code": "TW",
+        "definition": "TAIWAN, REPUBLIC OF CHINA"
+    },
+    {
+        "code": "TX",
+        "definition": "TEXAS"
+    },
+    {
+        "code": "TY",
+        "definition": "TURKEY"
+    },
+    {
+        "code": "TZ",
+        "definition": "TANZANIA, UNITED REPUBLIC OF"
+    },
+    {
+        "code": "UA",
+        "definition": "UNITED ARAB REPUBLIC (REFERENCE ONLY)"
+    },
+    {
+        "code": "UC",
+        "definition": "TURTLE MOUNTAIN BAND OF CHIPEWA"
+    },
+    {
+        "code": "UG",
+        "definition": "UGANDA"
+    },
+    {
+        "code": "UK",
+        "definition": "UKRAINE"
+    },
+    {
+        "code": "UM",
+        "definition": "MAURITIUS"
+    },
+    {
+        "code": "UR",
+        "definition": "TURKMENISTAN"
+    },
+    {
+        "code": "US",
+        "definition": "UNITED STATES"
+    },
+    {
+        "code": "UT",
+        "definition": "UTAH"
+    },
+    {
+        "code": "UV",
+        "definition": "BURKINA FASO (FORMERLY UPPER VOLTA)"
+    },
+    {
+        "code": "UY",
+        "definition": "URUGUAY (SOUTH AMERICA)"
+    },
+    {
+        "code": "UZ",
+        "definition": "UZBEKISTAN"
+    },
+    {
+        "code": "VA",
+        "definition": "VIRGINIA"
+    },
+    {
+        "code": "VB",
+        "definition": "BRITISH VIRGIN ISLANDS"
+    },
+    {
+        "code": "VC",
+        "definition": "VERACRUZ (MEXICAN STATE)"
+    },
+    {
+        "code": "VI",
+        "definition": "US VIRGIN ISLANDS"
+    },
+    {
+        "code": "VL",
+        "definition": "NAVASSA ISLAND"
+    },
+    {
+        "code": "VM",
+        "definition": "VIETNAM"
+    },
+    {
+        "code": "VN",
+        "definition": "NORTH VIETNAM (REFERENCE ONLY)"
+    },
+    {
+        "code": "VS",
+        "definition": "VIETNAM  (SOUTH)"
+    },
+    {
+        "code": "VT",
+        "definition": "VERMONT"
+    },
+    {
+        "code": "VV",
+        "definition": "ST VINCENT & THE GRENADINES"
+    },
+    {
+        "code": "VY",
+        "definition": "VATICAN CITY"
+    },
+    {
+        "code": "VZ",
+        "definition": "VENEZUELA  (SOUTH AMERICA)"
+    },
+    {
+        "code": "WA",
+        "definition": "WASHINGTON"
+    },
+    {
+        "code": "WB",
+        "definition": "WEST BANK"
+    },
+    {
+        "code": "WE",
+        "definition": "WHITE EARTH"
+    },
+    {
+        "code": "WF",
+        "definition": "WALLIS & FUTUNA, TERRITORY OF THE"
+    },
+    {
+        "code": "WG",
+        "definition": "FEDERAL REPUBLIC OF GERMANY (FORMERLY WEST GERMANY)"
+    },
+    {
+        "code": "WI",
+        "definition": "WISCONSIN"
+    },
+    {
+        "code": "WK",
+        "definition": "WAKE ISLAND"
+    },
+    {
+        "code": "WL",
+        "definition": "WALES"
+    },
+    {
+        "code": "WN",
+        "definition": "WEST INDIES"
+    },
+    {
+        "code": "WS",
+        "definition": "WEST SAMOA"
+    },
+    {
+        "code": "WV",
+        "definition": "WEST VIRGINIA"
+    },
+    {
+        "code": "WY",
+        "definition": "WYOMING"
+    },
+    {
+        "code": "XX",
+        "definition": "UNK PLACE OF BIRTH (USE IN III RECORDS ONLY)"
+    },
+    {
+        "code": "YE",
+        "definition": "YEMEN"
+    },
+    {
+        "code": "YG",
+        "definition": "YUGOSLAVIA (REFERENCE ONLY)"
+    },
+    {
+        "code": "YO",
+        "definition": "MAYOTEE"
+    },
+    {
+        "code": "YT",
+        "definition": "YUKON (TERRITORY)"
+    },
+    {
+        "code": "YU",
+        "definition": "YUCATAN     (MEXICAN STATE)"
+    },
+    {
+        "code": "YY",
+        "definition": "ALL OTHERS"
+    },
+    {
+        "code": "ZA",
+        "definition": "ZACATECAS   (MEXICAN STATE)"
+    },
+    {
+        "code": "ZB",
+        "definition": "MARTINIQUE"
+    },
+    {
+        "code": "ZC",
+        "definition": "SURINAM"
+    },
+    {
+        "code": "ZI",
+        "definition": "CANARY ISLANDS"
+    },
+    {
+        "code": "ZM",
+        "definition": "ZAMBIA, REPUBLIC OF"
+    },
+    {
+        "code": "ZO",
+        "definition": "MOZAMBIQUE"
+    },
+    {
+        "code": "ZR",
+        "definition": "ZAIRE, REPUBLIC OF (FORMERLY CONGO KINSHASA)"
+    },
+    {
+        "code": "",
+        "definition": ""
+    }
+]

@@ -1,0 +1,46 @@
+[
+    {
+        "code": "F",
+        "definition": "FELONY"
+    },
+    {
+        "code": "F1",
+        "definition": "FELONY FIRST DEGREE"
+    },
+    {
+        "code": "F2",
+        "definition": "FELONY SECOND DEGREE"
+    },
+    {
+        "code": "F3",
+        "definition": "FELONY THIRD DEGREE"
+    },
+    {
+        "code": "FC",
+        "definition": "FELONY CAPITAL"
+    },
+    {
+        "code": "FS",
+        "definition": "FELONY STATE JAIL"
+    },
+    {
+        "code": "M",
+        "definition": "MISDEMEANOR"
+    },
+    {
+        "code": "MA",
+        "definition": "MISDEMEANOR CLASS A"
+    },
+    {
+        "code": "MB",
+        "definition": "MISDEMEANOR CLASS B"
+    },
+    {
+        "code": "MC",
+        "definition": "MISDEMEANOR CLASS C"
+    },
+    {
+        "code": "",
+        "definition": ""
+    }
+]
