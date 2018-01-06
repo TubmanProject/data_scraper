@@ -178,3 +178,47 @@ def scrape_filing_today_task():
         "msg": "Asynchronous task to scrape filing report for today started with a task id of {}.".format(task.id)
     }
     return data
+
+
+def scrape_disposition_by_date_task(date='today'):
+    """Scrape disposition report by date.
+
+    date in format YYYY-MM-DD
+    """
+    if date == 'today':
+        datetime_obj = datetime.datetime.today()
+    else:
+        datetime_obj = parse(date)
+
+    task = chain(download_disposition_report_by_date_task.si(datetime_obj),
+                 parse_disposition_data_by_date_task.si(datetime_obj),
+                 delete_disposition_report_by_date_task.si(datetime_obj)).apply_async()
+
+    data = {
+        "task_id": task.id,
+        "date": datetime_obj.strftime('%Y-%m-%d'),
+        "msg": "Asynchronous task to scrape disposition report for today started with a task id of {}.".format(task.id)
+    }
+    return data
+
+
+def scrape_filing_by_date_task(date='today'):
+    """Scrape filing report by date.
+
+    date in format YYYY-MM-DD
+    """
+    if date == 'today':
+        datetime_obj = datetime.datetime.today()
+    else:
+        datetime_obj = parse(date)
+
+    task = chain(download_filing_report_by_date_task.si(datetime_obj),
+                 parse_filing_data_by_date_task.si(datetime_obj),
+                 delete_filing_report_by_date_task.si(datetime_obj)).apply_async()
+
+    data = {
+        "task_id": task.id,
+        "date": datetime_obj.strftime('%Y-%m-%d'),
+        "msg": "Asynchronous task to scrape filing report for today started with a task id of {}.".format(task.id)
+    }
+    return data

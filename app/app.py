@@ -18,8 +18,10 @@ from app import config as Config
 from app.api import (dispositions,
                      filings,
                      fields)
-from app.scraper.models.us.ustx.tasks import scrape_hcdc_disposition_today_task
-from app.scraper.models.us.ustx.tasks import scrape_hcdc_filing_today_task
+from app.scraper.models.us.ustx.tasks import (scrape_hcdc_disposition_today_task,
+                                              scrape_hcdc_filing_today_task,
+                                              scrape_hcdc_disposition_by_date_task,
+                                              scrape_hcdc_filing_by_date_task)
 from app.scraper.models.us.ustx.constants import HCDC_DATA_PATH
 from app.scraper.models.us.ustx.fields import initialize_fields as init_hcdc_fields
 from .dispositions import Dispositions
@@ -156,16 +158,31 @@ def configure_commands(app):
         click.echo('Initialized the database.')
 
     @app.cli.command('scrape')
-    @click.option('--type', help='Type of report to scrape. "disposition" or "filing"')
-    def scrape_report(type):
+    @click.option('--type',
+                  help='Type of report to scrape. "disposition" or "filing"',
+                  type=click.Choice(['disposition', 'filing']),
+                  default='disposition')
+    @click.option('--date',
+                  help='Date of the report to scrape.',
+                  default='today')
+    def scrape_report(type, date='today'):
         """Scrape a report."""
-        if type == 'disposition':
-            res = scrape_hcdc_disposition_today_task()
-            click.echo(res)
+        if date == 'today':
+            if type == 'disposition':
+                res = scrape_hcdc_disposition_today_task()
+                click.echo(res)
 
-        if type == 'filing':
-            res = scrape_hcdc_filing_today_task()
-            click.echo(res)
+            if type == 'filing':
+                res = scrape_hcdc_filing_today_task()
+                click.echo(res)
+        else:
+            if type == 'disposition':
+                res = scrape_hcdc_disposition_by_date_task(date)
+                click.echo(res)
+
+            if type == 'filing':
+                res = scrape_hcdc_filing_by_date_task(date)
+                click.echo(res)
 
 
 def configure_logging(app):
