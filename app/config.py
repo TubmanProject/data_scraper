@@ -123,7 +123,7 @@ class DefaultConfig(object):
     ########################
     # Celery Configuration #
     ########################
-    # accept_content = ['json']
+    accept_content = ['json', 'pickle']
     # enable_utc = True
     # timezone = 'UTC'
     # task_annotations = None
