@@ -44,6 +44,7 @@ db = pymongo_client[config['MONGO_DBNAME']]
 celery = Celery(__name__,
                 backend=config['result_backend'],
                 broker=config['broker_url'])
+celery.config_from_object(Config)
 ###################
 # Pika (RabbitMQ) #
 ###################

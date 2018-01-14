@@ -25,7 +25,7 @@ class APIEndpointTaskBaseClass(celery.Task):
                                                                                             einfo.traceback))
 
 
-@celery.task(base=APIEndpointTaskBaseClass)
+@celery.task(base=APIEndpointTaskBaseClass, serializer='pickle')
 def cache_mongodb_request(model, request_args, encoded_full_path=None, batch_size=None, batch=None, cache_expire=24):
     """Celery task to cache the results of a mongodb query."""
     try:
@@ -36,6 +36,7 @@ def cache_mongodb_request(model, request_args, encoded_full_path=None, batch_siz
 
         # determine docs to skip
         skipped = batch_size * (batch - 1)
+        skipped = 0 if skipped < 0 else skipped
 
         # https://stackoverflow.com/questions/14822184/is-there-a-ceiling-equivalent-of-operator-in-python
         total_batches = -(-total_docs//batch_size)  # upside-down floor divsion

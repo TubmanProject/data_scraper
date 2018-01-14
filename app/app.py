@@ -25,7 +25,6 @@ from app.scraper.models.us.ustx.tasks import (scrape_hcdc_disposition_today_task
 from app.scraper.models.us.ustx.constants import HCDC_DATA_PATH
 from app.scraper.models.us.ustx.fields import initialize_fields as init_hcdc_fields
 from .dispositions import Dispositions
-from .extensions import celery
 from .extensions import pymongo_client
 from .filings import Filings
 from .frontend import frontend
@@ -104,13 +103,12 @@ def configure_extensions(app):
     ###########
     # MongoDB #
     ###########
-    # configured in the 'extensions module'
+    # configured in the 'app.extensions module'
 
     ##########
     # Celery #
     ##########
-    # configure Celery with settings from Flask app config.py
-    celery.config_from_object(app.config)
+    # configured in 'app.extensions module' because Flask is not compatiable with lower-case config attributes
 
     ##############
     # Flask-Mail #
