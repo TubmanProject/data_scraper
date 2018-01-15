@@ -6,7 +6,7 @@ import pickle
 
 from app.extensions import celery
 from bson.json_util import dumps, RELAXED_JSON_OPTIONS
-from celery import chain
+from celery import group
 from flask import current_app
 from json import JSONDecodeError
 from pymongo.errors import OperationFailure, InvalidOperation
@@ -78,8 +78,6 @@ def cache_mongodb_request(model, request_args, encoded_full_path=None, batch_siz
         # set the query to expire in 24 hours
         redis.expire(data['metadata']['query'], int(cache_expire) * 60 * 60)
 
-        return cursor
-
     except OperationFailure as err:
         # database error on cursor.count()
         raise
@@ -109,13 +107,12 @@ def cache_mongodb_request_task(model, request_args, encoded_full_path, metadata,
     # https://stackoverflow.com/questions/14822184/is-there-a-ceiling-equivalent-of-operator-in-python
     total_batches = -(-total_docs//batch_size)  # upside-down floor divsion
 
-    task = chain(cache_mongodb_request.si(model,
+    task = group(cache_mongodb_request.si(model,
                                           request_args,
                                           encoded_full_path=encoded_full_path,
                                           batch_size=batch_size,
                                           batch=i,
-                                          cache_expire=cache_expire) for i in range(total_batches))
-
+                                          cache_expire=cache_expire) for i in range(1, total_batches + 1))
     task.apply_async(serializer='pickle')
 
     data = {

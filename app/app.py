@@ -158,27 +158,38 @@ def configure_commands(app):
     @app.cli.command('scrape')
     @click.option('--type',
                   help='Type of report to scrape. "disposition" or "filing"',
-                  type=click.Choice(['disposition', 'filing']),
-                  default='disposition')
+                  type=click.Choice(['disposition', 'filing']))
     @click.option('--date',
                   help='Date of the report to scrape.',
                   default='today')
-    def scrape_report(type, date='today'):
+    def scrape_report(type=None, date='today'):
         """Scrape a report."""
-        if date == 'today':
-            if type == 'disposition':
+        if type:
+            if date == 'today':
+                if type == 'disposition':
+                    res = scrape_hcdc_disposition_today_task()
+                    click.echo(res)
+
+                if type == 'filing':
+                    res = scrape_hcdc_filing_today_task()
+                    click.echo(res)
+            else:
+                if type == 'disposition':
+                    res = scrape_hcdc_disposition_by_date_task(date)
+                    click.echo(res)
+
+                if type == 'filing':
+                    res = scrape_hcdc_filing_by_date_task(date)
+                    click.echo(res)
+        else:
+            if date == 'today':
                 res = scrape_hcdc_disposition_today_task()
                 click.echo(res)
-
-            if type == 'filing':
                 res = scrape_hcdc_filing_today_task()
                 click.echo(res)
-        else:
-            if type == 'disposition':
+            else:
                 res = scrape_hcdc_disposition_by_date_task(date)
                 click.echo(res)
-
-            if type == 'filing':
                 res = scrape_hcdc_filing_by_date_task(date)
                 click.echo(res)
 
